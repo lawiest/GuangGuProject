@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WFS_Capabilities version="1.0.0"
+    xsi:schemaLocation="http://www.opengis.net/wfs http://192.168.100.134:9010/test_road4547-capabilities.xsd"
+    xmlns:ogc="http://www.opengis.net/ogc"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs">
+    <Service>
+        <Name>test_road4547</Name>
+        <Title>GeoGlobe网络要素服务</Title>
+        <Abstract>武大吉奥信息技术有限公司GeoGlobe网络要素服务</Abstract>
+        <Keywords>
+            <Keyword>OGC WFS</Keyword>
+        </Keywords>
+        <OnlineResource>www.geostar.com.cn</OnlineResource>
+    </Service>
+    <Capability>
+        <Request>
+            <GetCapabilities>
+                <DCPType>
+                    <HTTP>
+                        <Get onlineResource="http://192.168.100.134:9010/test_road4547/wfs?"/>
+                    </HTTP>
+                </DCPType>
+            </GetCapabilities>
+            <DescribeFeatureType>
+                <SchemaDescriptionLanguage>
+                    <XMLSCHEMA/>
+                </SchemaDescriptionLanguage>
+                <DCPType>
+                    <HTTP>
+                        <Get onlineResource="http://192.168.100.134:9010/test_road4547/wfs?"/>
+                        <Post onlineResource="http://192.168.100.134:9010/test_road4547/wfs?"/>
+                    </HTTP>
+                </DCPType>
+            </DescribeFeatureType>
+            <GetFeature>
+                <ResultFormat>
+                    <GML2/>
+                </ResultFormat>
+                <DCPType>
+                    <HTTP>
+                        <Get onlineResource="http://192.168.100.134:9010/test_road4547/wfs?"/>
+                        <Post onlineResource="http://192.168.100.134:9010/test_road4547/wfs?"/>
+                    </HTTP>
+                </DCPType>
+            </GetFeature>
+        </Request>
+        <VendorSpecificCapabilities/>
+    </Capability>
+    <FeatureTypeList>
+        <Operations>
+            <Query/>
+        </Operations>
+        <FeatureType>
+            <Name>DAOLU-MIAN</Name>
+            <Title>DAOLU-MIAN</Title>
+            <Abstract>DAOLU-MIAN</Abstract>
+            <Keywords>DAOLU-MIAN</Keywords>
+            <SRS>EPSG:4547</SRS>
+            <LatLongBoundingBox minx="114.42951385593736"
+                miny="30.39194696160159" maxx="114.4867459173047" maxy="30.4265397203246"/>
+        </FeatureType>
+    </FeatureTypeList>
+    <ogc:Filter_Capabilities>
+        <ogc:Spatial_Capabilities>
+            <ogc:Spatial_Operators>
+                <ogc:BBOX/>
+                <ogc:Equals/>
+                <ogc:Disjoint/>
+                <ogc:Intersect/>
+                <ogc:Touches/>
+                <ogc:Crosses/>
+                <ogc:Within/>
+                <ogc:Contains/>
+                <ogc:Overlaps/>
+                <ogc:Beyond/>
+            </ogc:Spatial_Operators>
+        </ogc:Spatial_Capabilities>
+        <ogc:Scalar_Capabilities>
+            <ogc:Logical_Operators/>
+            <ogc:Comparison_Operators>
+                <ogc:Simple_Comparisons/>
+                <ogc:Like/>
+                <ogc:Between/>
+            </ogc:Comparison_Operators>
+        </ogc:Scalar_Capabilities>
+    </ogc:Filter_Capabilities>
+</WFS_Capabilities>

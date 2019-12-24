@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WFS_Capabilities version="1.0.0"
+    xsi:schemaLocation="http://www.opengis.net/wfs http://192.168.51.107:9010/WFS_XL/wfs-capabilities.xsd"
+    xmlns:ogc="http://www.opengis.net/ogc"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs">
+    <Service>
+        <Name>WFS_XL</Name>
+        <Title>GeoGlobe带事务的网络要素服务</Title>
+        <Abstract>武大吉奥信息技术有限公司GeoGlobe带事务的网络要素服务</Abstract>
+        <Keywords>GeoGlobe WFS-T</Keywords>
+        <OnlineResource>www.geostar.com.cn</OnlineResource>
+    </Service>
+    <Capability>
+        <Request>
+            <GetCapabilities>
+                <DCPType>
+                    <HTTP>
+                        <Get onlineResource="http://192.168.51.107:9010/WFS_XL/wfs"/>
+                    </HTTP>
+                </DCPType>
+            </GetCapabilities>
+            <DescribeFeatureType>
+                <SchemaDescriptionLanguage>
+                    <XMLSCHEMA/>
+                </SchemaDescriptionLanguage>
+                <DCPType>
+                    <HTTP>
+                        <Get onlineResource="http://192.168.51.107:9010/WFS_XL/wfs"/>
+                        <Post onlineResource="http://192.168.51.107:9010/WFS_XL/wfs"/>
+                    </HTTP>
+                </DCPType>
+            </DescribeFeatureType>
+            <GetFeature>
+                <ResultFormat>
+                    <GML2/>
+                </ResultFormat>
+                <DCPType>
+                    <HTTP>
+                        <Get onlineResource="http://192.168.51.107:9010/WFS_XL/wfs"/>
+                        <Post onlineResource="http://192.168.51.107:9010/WFS_XL/wfs"/>
+                    </HTTP>
+                </DCPType>
+            </GetFeature>
+            <Transaction>
+                <DCPType>
+                    <HTTP>
+                        <Get onlineResource="http://192.168.51.107:9010/WFS_XL/wfs"/>
+                        <Post onlineResource="http://192.168.51.107:9010/WFS_XL/wfs"/>
+                    </HTTP>
+                </DCPType>
+            </Transaction>
+            <LockFeature>
+                <DCPType>
+                    <HTTP>
+                        <Get onlineResource="http://192.168.51.107:9010/WFS_XL/wfs"/>
+                        <Post onlineResource="http://192.168.51.107:9010/WFS_XL/wfs"/>
+                    </HTTP>
+                </DCPType>
+            </LockFeature>
+        </Request>
+        <VendorSpecificCapabilities/>
+    </Capability>
+    <FeatureTypeList>
+        <Operations>
+            <Query/>
+            <Insert/>
+            <Update/>
+            <Delete/>
+            <Lock/>
+        </Operations>
+        <FeatureType>
+            <Name>ROAD</Name>
+            <Title>ROAD</Title>
+            <Abstract>ROAD</Abstract>
+            <Keywords>ROAD</Keywords>
+            <SRS>EPSG:4490</SRS>
+            <LatLongBoundingBox minx="113.686050415039"
+                miny="30.011022567749" maxx="115.001846313477" maxy="31.3492832183838"/>
+        </FeatureType>
+    </FeatureTypeList>
+    <ogc:Filter_Capabilities>
+        <ogc:Spatial_Capabilities>
+            <ogc:Spatial_Operators>
+                <ogc:BBOX/>
+                <ogc:Equals/>
+                <ogc:Disjoint/>
+                <ogc:Intersect/>
+                <ogc:Touches/>
+                <ogc:Crosses/>
+                <ogc:Within/>
+                <ogc:Contains/>
+                <ogc:Overlaps/>
+                <ogc:Beyond/>
+            </ogc:Spatial_Operators>
+        </ogc:Spatial_Capabilities>
+        <ogc:Scalar_Capabilities>
+            <ogc:Logical_Operators/>
+            <ogc:Comparison_Operators>
+                <ogc:Simple_Comparisons/>
+                <ogc:Like/>
+                <ogc:Between/>
+            </ogc:Comparison_Operators>
+        </ogc:Scalar_Capabilities>
+    </ogc:Filter_Capabilities>
+</WFS_Capabilities>

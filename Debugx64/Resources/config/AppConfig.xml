@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Config Name="\" Description="根配置" Type="System.String">
+    <Config Name="App" Description="App配置" Type="System.String">
+        <Config Name="Ribbon" Description="主界面" Type="String">
+            <Config Name="Pages" Description="page页" Type="String">
+                <Config Name="Page" Description="主页" Type="String">
+                    <Config Name="Group" Description="数据" Type="String">
+                        <Config Name="Menu" Description="本地" Type="String">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/localData.png</Value>
+                            </Config>
+                            <Config Name="Item" Description="地形" Type="int">
+                                <Config Name="Icon" Description="图标路径" Type="String">
+                                    <Value>./Resources/icon/terraine.png</Value>
+                                </Config>
+                                <Config Name="SlotName" Description="槽函数" Type="String">
+                                    <Value>AddTerrain</Value>
+                                </Config>
+                            </Config>
+                            <Config Name="Item" Description="影像" Type="int">
+                                <Config Name="Icon" Description="图标路径" Type="String">
+                                    <Value>./Resources/icon/Image.png</Value>
+                                </Config>
+                                <Config Name="SlotName" Description="槽函数" Type="String">
+                                    <Value>AddImage</Value>
+                                </Config>
+                            </Config>
+                            <Config Name="Item" Description="模型" Type="int">
+                                <Config Name="Icon" Description="图标路径" Type="String">
+                                    <Value>./Resources/icon/Model.png</Value>
+                                </Config>
+                                <Config Name="SlotName" Description="槽函数" Type="String">
+                                    <Value>AddModel</Value>
+                                </Config>
+                            </Config>
+                            <Config Name="Item" Description="地名" Type="int">
+                                <Config Name="Icon" Description="图标路径" Type="String">
+                                    <Value>./Resources/icon/placename.png</Value>
+                                </Config>
+                                <Config Name="SlotName" Description="槽函数" Type="String">
+                                    <Value>AddPlaceName</Value>
+                                </Config>
+                            </Config>
+                            <Config Name="Item" Description="矢量" Type="int">
+                                <Config Name="Icon" Description="图标路径" Type="String">
+                                    <Value>./Resources/icon/vector.png</Value>
+                                </Config>
+                                <Config Name="SlotName" Description="槽函数" Type="String">
+                                    <Value>AddVector</Value>
+                                </Config>
+                            </Config>
+                            <Config Name="Item" Description="倾斜" Type="int">
+                                <Config Name="Icon" Description="图标路径" Type="String">
+                                    <Value>./Resources/icon/obliq.png</Value>
+                                </Config>
+                                <Config Name="SlotName" Description="槽函数" Type="String">
+                                    <Value>AddObliqueImage</Value>
+                                </Config>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="服务" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/Service.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>AddServer</Value>
+                            </Config>
+                        </Config>
+                    </Config>
+                    <!--
+	        		 					 <Config Name="Group" Description="浏览" Type="String">
+	        		 							<Config Name="Button" Description="选择" Type="int">
+	        		 									<Config Name="Icon" Description="图标路径" Type="String">
+		             										<Value>./Resources/icon/Select.png</Value>
+		        		 								</Config>
+           										  <Config Name="SlotName" Description="槽函数" Type="String">
+           													<Value>Select</Value>
+      		 											</Config> 
+	        		 							</Config>
+	        		 							<Config Name="Button" Description="多边形拾取" Type="int">
+	        		 									<Config Name="Icon" Description="图标路径" Type="String">
+		             										<Value>./Resources/icon/PolygonQuery.png</Value>
+		        		 								</Config>
+           										  <Config Name="SlotName" Description="槽函数" Type="String">
+           													<Value>PolygonQuery</Value>
+      		 											</Config> 
+	        		 							</Config>           					 
+	        		 					</Config>
+
+	        		 					<Config Name="Group" Description="路径飞行" Type="String">
+
+	        		 					-->
+                    <Config Name="Group" Description="路径飞行" Type="String">
+
+                        <Config Name="Button" Description="增加节点" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/NewFlyNode.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>AddFlyPoints</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="开始飞行" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/Star.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>StartFly</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="停止飞行" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/stopfly.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>StopFly</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="暂停飞行" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/pausefly.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>PauseFly</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="恢复飞行" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/Star.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>ReStartFly</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="倒退飞行" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/back.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>BackFly</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="保存飞行路径" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/savefly.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>SaveFlyPath</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="加载飞行" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/loadfly.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>LoadFlyPath</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="加速" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/NewFlyNode.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>FastSpeed</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="减速" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/delete.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>ReduceSpeed</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="重置" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/revoke.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>ReSetFlyPath</Value>
+                            </Config>
+                        </Config>
+                    </Config>
+                    <Config Name="Group" Description="绕点飞行" Type="String">
+                        <Config Name="Button" Description="开始" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/Star.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>BeginRotation</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="加速" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/NewFlyNode.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>FastRotationSpeed</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="减速" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/delete.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>ReduceRotationSpeed</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="停止" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/stopfly.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>StopRotation</Value>
+                            </Config>
+                        </Config>
+                    </Config>
+                    <Config Name="Group" Description="自由飞行" Type="String">
+                        <Config Name="Button" Description="开始飞行" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/Star.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>StartFreeFly</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="CheckBox" Description="停止飞行" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/stopfly.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>StopFreeFly</Value>
+                            </Config>
+                        </Config>
+                    </Config>
+
+                    <Config Name="Group" Description="其他" Type="String">
+                        <Config Name="Button" Description="测试" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/loadfly.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>Test</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="CheckBox" Description="惯性" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/loadfly.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>ThrowingEnable</Value>
+                            </Config>
+                        </Config>
+                    </Config>
+                </Config>
+                <Config Name="Page" Description="量算与分析" Type="String">
+                    <Config Name="Group" Description="通视分析" Type="String">
+                        <Config Name="Button" Description="视域分析" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/SingleVisibility.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>OPInRangeAnalysis</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="通视分析" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/TwoPass.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>LineOfSightAnalysis</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="多点通视" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/MultipleLineOfSightAnalysis.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>MultipleLineOfSightAnalysis</Value>
+                            </Config>
+                        </Config>
+
+                    </Config>
+                    <Config Name="Group" Description="量算分析" Type="String">
+                        <Config Name="Button" Description="马拉松" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/runner.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>Marathon</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="编辑元素" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/runner.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>EditElement</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="高度量算" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/MeasuresVolume.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>HeightAnalysis</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="面积" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/areameasure.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>AreaMeasureAnalysis</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="距离量算" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/distance.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>DistanceAnalysis</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="3D距离量算" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/distance.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>DistanceAnalysis3D</Value>
+                            </Config>
+                        </Config>
+                        
+                        <Config Name="Button" Description="面积3D" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/areameasure.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>AreaMeasureAnalysis3D</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="体积" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/volume.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>VolumeAnalysis</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="雷达分析" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/Sunshinecone.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>RadarAnalysis</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="剖面分析" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/Sunshinecone.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>TerrainProfileAnalysis</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="倾斜剖面" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/Sunshinecone.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>OsgbProfileAnalysis</Value>
+                            </Config>
+                        </Config>
+                    </Config>
+                    <Config Name="Group" Description="编辑" Type="String">
+                        <Config Name="Button" Description="清除指定分析结果" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/Clear.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>RemoveAnalysis</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="清除分析结果" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/Clear.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>RemoveAllAnalysis</Value>
+                            </Config>
+                        </Config>
+                    </Config>
+                </Config>
+                <Config Name="Page" Description="模型添加" Type="String">
+                    <Config Name="Group" Description="模型" Type="String">
+                        <Config Name="Button" Description="读取模型" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/SingleVisibility.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>AddModelElement</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="告示牌" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/TwoPass.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>AddBillBoardElement</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="动目标加载" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/TwoPass.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>AddGeoBillBoardElement</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="轨迹隐藏/显示" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/TwoPass.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>TrakerVisible</Value>
+                            </Config>
+                        </Config>
+                        <Config Name="Button" Description="告示牌隐藏/显示" Type="int">
+                            <Config Name="Icon" Description="图标路径" Type="String">
+                                <Value>./Resources/icon/TwoPass.png</Value>
+                            </Config>
+                            <Config Name="SlotName" Description="槽函数" Type="String">
+                                <Value>BillBoardVisible</Value>
+                            </Config>
+                        </Config>
+
+
+
+
+                    </Config>
+                </Config>
+            </Config>
+        </Config>
+    </Config>
+</Config>

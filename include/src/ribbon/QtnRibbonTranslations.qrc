@@ -1,0 +1,9 @@
+<RCC>
+	<qresource prefix="/">
+		<file alias="translations/ribbon/de_DE.qm">../../translations/ribbon/de_de.qm</file>
+		<file alias="translations/ribbon/fr_FR.qm">../../translations/ribbon/fr_fr.qm</file>
+		<file alias="translations/ribbon/ru_RU.qm">../../translations/ribbon/ru_ru.qm</file>
+		<file alias="translations/ribbon/pl_PL.qm">../../translations/ribbon/pl_pl.qm</file>
+		<file alias="translations/ribbon/it_IT.qm">../../translations/ribbon/it_it.qm</file>
+	</qresource>
+</RCC>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetCapabilitiesResponse>
+    <ServiceCapabilities>
+        <Name>WorldNewDEM</Name>
+        <Service>GEOGLOBETILESERVICE</Service>
+        <Version>2.0.0</Version>
+        <Abstract>GeoGlobe 瓦片服务</Abstract>
+        <Keywords>TILE 武大吉奥</Keywords>
+        <Tags>TILE 武大吉奥</Tags>
+        <OnlineResource>http://www.geostar.com.cn</OnlineResource>
+        <ServerAddress>http://192.168.43.49:9010/WorldNewDEM/services/tile</ServerAddress>
+        <OperationList>
+            <Operations>
+                <GetCapabilities>
+                    <Format>text/xml</Format>
+                </GetCapabilities>
+                <GetTile>
+                    <Format>image/tile</Format>
+                    <Format>image/png</Format>
+                    <Format>image/jpeg</Format>
+                </GetTile>
+                <GetTileData>
+                    <Format>text/xml</Format>
+                </GetTileData>
+            </Operations>
+        </OperationList>
+        <Data>
+            <TileData>
+                <Tile>terrain</Tile>
+                <CRS>GEOGCS["WGS_1984",DATUM["WGS_1984",SPHEROID["WGS_1984",6378137,298.257223563]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433]]</CRS>
+                <BoundBox minx="45.0" miny="-22.5" maxx="157.5" maxy="90.0"></BoundBox>
+                <LevelZeroTileSizeX>360.0</LevelZeroTileSizeX>
+                <LevelZeroTileSizeY>-360.0</LevelZeroTileSizeY>
+                <TopLevel>4</TopLevel>
+                <BottomLevel>11</BottomLevel>
+                <TilePixelsX>256</TilePixelsX>
+                <TilePixelsY>256</TilePixelsY>
+                <DEMDataType>int16</DEMDataType>
+                <Pyramid>
+                    <Basic Name="360度金字塔"
+                        PyramidID="72f3fcab-c1c2-4942-bb17-af5a3b469e5d" Description="360度金字塔方案"></Basic>
+                    <Level TopLevelIndex="0" BottomLevelIndex="20"
+                        ScaleX="2.0" ScaleY="2.0"></Level>
+                    <TileBasic TileSizeX="256" TileSizeY="256"
+                        OriginRowIndex="0" OriginColIndex="0"></TileBasic>
+                    <TopTile FromX="-180.0" FromY="90.0" ToX="180.0" ToY="-270.0"></TopTile>
+                    <Const PI="3.141592653589793" Tolerance="1.1920928955078E-7"></Const>
+                    <Range XMin="-180.0" XMax="180.0" YMin="-90.0" YMax="90.0"></Range>
+                </Pyramid>
+            </TileData>
+        </Data>
+    </ServiceCapabilities>
+</GetCapabilitiesResponse>

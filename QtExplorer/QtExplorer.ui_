@@ -1,0 +1,1452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtExplorerClass</class>
+ <widget class="QWidget" name="QtExplorerClass">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1639</width>
+    <height>188</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GeoGlobe</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*QMenu {
+	background-image: url(:/QMainWindow/Resources/icon/defaultbkg.jpg);
+    background-color: #FCFCFC;
+    border: 1px solid #8492A6;
+}*/
+
+QMenu {
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #FFFFFF, stop: 0.5 #DCE6F4,
+                                stop: 0.95 #DCE6F4, stop: 1.0 #E5F0FB);
+}
+
+MenuItemWidget,QMenu::item {
+     /* sets background of menu item. set this to something non-transparent
+         if you want menu color and menu item color to be different */
+     background-color: transparent;
+     padding:8px 35px;/*设置菜单项文字上下和左右的内边距，效果就是菜单中的条目左右上下有了间隔*/
+     margin:0px 4px;/*设置菜单项的外边距*/
+     border-bottom:1px solid #DBDBDB;/*为菜单项之间添加横线间隔*/
+ }
+  
+ MenuItemWidget::hover,QMenu::item:selected { /* when user selects item using mouse or keyboard */
+     background-color: #2dabf9;/*这一句是设置菜单项鼠标经过选中的样式*/
+ }
+
+/*MenuItemWidget::hover{
+	border: 1px solid #FFB700;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 #FEF9F4, stop:0.38 #FDE0BD,stop:0.39 #FFCE69, stop:1 #FFFFE7);
+}*/
+
+/*QMenu::item:selected { 
+    background-color: rgba(220, 224, 231,100);
+}*/
+
+#QMainWindowClass{
+	background-color:rgb(255, 255, 255);
+}
+
+#menuFilePushButton::menu-indicator{
+	image:None;
+}
+
+QWidget{
+	font-family: &quot;微软雅黑&quot;;
+}
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
+    <number>1</number>
+   </property>
+   <property name="bottomMargin">
+    <number>2</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>90</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QToolButton" name="toolButton">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: transparent;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normalon>:/QMainWindow/Resources/icon/main.ico</normalon>
+           </iconset>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="saveWSToolButton">
+          <property name="toolTip">
+           <string>保存</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QToolButton{background: transparent;}
+
+QToolButton::hover{
+	background-color:rgba(220, 224, 231,150);
+	border:0px;
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normalon>:/QMainWindow/Resources/icon/save.png</normalon>
+            <disabledoff>:/QMainWindow/Resources/icon/save.png</disabledoff>
+            <disabledon>:/QMainWindow/Resources/icon/save.png</disabledon>
+           </iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="openWSToolButton">
+          <property name="toolTip">
+           <string>打开</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QToolButton{background: transparent;}
+QToolButton::hover{background-color:rgba(220, 224, 231,150);border:0px;}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normalon>:/QMainWindow/Resources/icon/open.png</normalon>
+            <disabledoff>:/QMainWindow/Resources/icon/open.png</disabledoff>
+            <disabledon>:/QMainWindow/Resources/icon/open.png</disabledon>
+            <selectedoff>:/QMainWindow/Resources/icon/open.png</selectedoff>
+            <selectedon>:/QMainWindow/Resources/icon/open.png</selectedon>
+           </iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="undoToolButton">
+          <property name="toolTip">
+           <string>撤销  (ctrl+z)</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QToolButton{background: transparent;}
+QToolButton::hover{background-color:rgba(220, 224, 231,150);border:0px;}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normalon>:/QMainWindow/Resources/icon/undo.png</normalon>
+           </iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="redoToolButton">
+          <property name="toolTip">
+           <string>重做 (ctrl+r)</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QToolButton{background: transparent;}
+QToolButton::hover{background-color:rgba(220, 224, 231,150);border:0px;}</string>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normalon>:/QMainWindow/Resources/icon/redo.png</normalon>
+           </iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>全景三维采编系统</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+     <zorder>horizontalSpacer_3</zorder>
+     <zorder>horizontalSpacer_2</zorder>
+     <zorder></zorder>
+     <zorder>label</zorder>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>130</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>130</height>
+      </size>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QTabWidget" name="mainTabWidget">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#mainTabWidget::tab-bar {
+    left: 52px;
+}
+#mainTabWidget QTabBar::tab{
+	min-width:60px;
+	max-width:60px;
+	min-height:22px;
+	max-height:22px;
+}
+#mainTabWidget QTabBar::tab {
+	background: transparent;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+#mainTabWidget QTabBar::tab:selected, QTabBar::tab:hover {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+#mainTabWidget::tab-bar {
+ 	border: 1px solid #BAC9DB;
+}
+#mainTabWidget QTabBar::tab:selected{
+	border: 1px solid #BAC9DB;
+	background: white;
+    border-bottom-color: #FFFFFF;
+}
+#mainTabWidget QTabBar::tab:hover:!selected{
+	border: 1px solid #ECBC3D;
+}
+#mainTabWidget QTabBar::tab:!selected {
+    margin-top: 1px; 
+}
+
+#mainTabWidget QGroupBox{
+	border-left: 0px solid gray;
+	border-top: 0px solid gray;
+    margin:4px 0px 4px 0;/*设置菜单项的外边距*/
+	border-right:1px solid #D4D4D4;/*为菜单项之间添加横线间隔*/
+}
+
+#mainTabWidget QToolButton{
+	background-color:transparent;
+	min-width:30px;
+	min-height:30px;
+}
+
+#mainTabWidget QToolButton:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+		stop:0 #ddf4ff, stop:0.5 #9de0ff,stop:0.51 #87d8ff, stop:1 #c6edff);
+	border:0px;
+	border-radius:5px;
+}
+
+#mainTabWidget QToolButton:checked{
+		background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+		stop:0 #ddf4ff, stop:0.5 #9de0ff,stop:0.51 #87d8ff, stop:1 #c6edff);
+
+	border-radius:5px;
+}  
+
+#mainTabWidget QToolButton::menu-button:hover {
+    border-left: 1px solid #444444;
+    background: transparent;
+    width: 16px;
+}
+
+#mainTabWidget QToolButton::menu-indicator {
+    subcontrol-position: bottom center;
+	position: relative;
+    bottom : 0px;
+}
+
+#mainTabWidget QGroupBox::title {
+	color: #738399;
+    subcontrol-position: bottom center; 
+}
+
+#mainTabWidget::pane{
+	border: 1px solid #BAC9DB;
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #FFFFFF, stop: 0.5 #DCE6F4,
+                                stop: 0.95 #DCE6F4, stop: 1.0 #E5F0FB);
+	top: -1px;
+}</string>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="mainpage">
+         <attribute name="title">
+          <string>主页</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>4</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="title">
+             <string>文件管理</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <property name="spacing">
+              <number>3</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>3</number>
+             </property>
+             <property name="bottomMargin">
+              <number>13</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="menuFilePushButton">
+               <property name="styleSheet">
+                <string notr="true">#menuFilePushButton{
+	min-width:50px;
+	max-width:50px;
+	min-height:22px;
+	max-height:22px;
+}
+#menuFilePushButton{
+	color:white;
+	border: 1px solid #416ABD;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+		stop:0 #467FBD, stop:0.5 #2A5FAC,stop:0.51 #1A4088, stop:1 #419ACF);
+}
+#menuFilePushButton::hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+		stop:0 #7BB2EB, stop:0.5 #477ECD,stop:0.51 #114ECF, stop:1 #80E1FF);
+}
+#menuFilePushButton::pressed{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+		stop:0 #467BBB, stop:0.5 #2F63AE,stop:0.51 #1C438A, stop:1 #358BC9);
+}</string>
+               </property>
+               <property name="text">
+                <string>文件</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="loadLocalDataToolButton">
+               <property name="minimumSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>批量</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normalon>:/QMainWindow/Resources/icon/localData.png</normalon>
+                </iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="loadSingleDataToolButton">
+               <property name="text">
+                <string>单个</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normalon>:/QMainWindow/Resources/icon/localData.png</normalon>
+                </iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="importVectorToolButton">
+               <property name="text">
+                <string>导入矢量</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normalon>:/QMainWindow/Resources/icon/localData.png</normalon>
+                </iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="exportVectorToolButton">
+               <property name="text">
+                <string>导出矢量</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normalon>:/QMainWindow/Resources/icon/savefly.png</normalon>
+                </iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="mergeToolButton">
+               <property name="toolTip">
+                <string>合并当前视图矢量并导出</string>
+               </property>
+               <property name="text">
+                <string>合并</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normalon>:/QMainWindow/Resources/icon/savefly.png</normalon>
+                </iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="title">
+             <string>采集操作</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>3</number>
+             </property>
+             <property name="bottomMargin">
+              <number>13</number>
+             </property>
+             <item>
+              <widget class="QToolButton" name="finishToolButton">
+               <property name="toolTip">
+                <string>完成采集（鼠标右键单击）</string>
+               </property>
+               <property name="text">
+                <string>完成采集</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normalon>:/QMainWindow/Resources/icon/pencil.png</normalon>
+                </iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+               <property name="autoRaise">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="finishModifyToolButton">
+               <property name="toolTip">
+                <string>完成修改（esc）</string>
+               </property>
+               <property name="text">
+                <string>完成修改</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normalon>:/QMainWindow/Resources/icon/picture_edit.png</normalon>
+                </iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="monomerToolButton">
+               <property name="text">
+                <string>单体化</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normalon>:/QMainWindow/Resources/icon/picture_edit.png</normalon>
+                </iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QGridLayout" name="gridLayout_3">
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <item row="0" column="10">
+                <widget class="QToolButton" name="anyVerticalToolButton">
+                 <property name="toolTip">
+                  <string>任意角自动化（j）</string>
+                 </property>
+                 <property name="statusTip">
+                  <string/>
+                 </property>
+                 <property name="text">
+                  <string>任意</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normalon>:/QMainWindow/Resources/icon/right_arrow.png</normalon>
+                  </iconset>
+                 </property>
+                 <property name="toolButtonStyle">
+                  <enum>Qt::ToolButtonTextUnderIcon</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="10">
+                <widget class="QToolButton" name="showLineToolButton">
+                 <property name="toolTip">
+                  <string>线最上方显示 (v)</string>
+                 </property>
+                 <property name="text">
+                  <string>显线</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normalon>:/QMainWindow/Resources/icon/Layers_Layer_32px_1082865_easyicon.net.png</normalon>
+                  </iconset>
+                 </property>
+                 <property name="toolButtonStyle">
+                  <enum>Qt::ToolButtonTextUnderIcon</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="9">
+                <widget class="QToolButton" name="anchorToolButton">
+                 <property name="toolTip">
+                  <string>锚点（shift+鼠标左键单击）</string>
+                 </property>
+                 <property name="text">
+                  <string>锚点</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normalon>:/QMainWindow/Resources/icon/eye.png</normalon>
+                  </iconset>
+                 </property>
+                 <property name="toolButtonStyle">
+                  <enum>Qt::ToolButtonTextUnderIcon</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="9">
+                <widget class="QToolButton" name="autoVerticalToolButton">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>32</width>
+                   <height>32</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>自动直角化 (h)</string>
+                 </property>
+                 <property name="text">
+                  <string>直角</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normalon>:/QMainWindow/Resources/icon/right_arrow.png</normalon>
+                  </iconset>
+                 </property>
+                 <property name="toolButtonStyle">
+                  <enum>Qt::ToolButtonTextUnderIcon</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="3">
+                <widget class="QToolButton" name="cultUpToolButton">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>32</width>
+                   <height>32</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>向上切割 (z)</string>
+                 </property>
+                 <property name="text">
+                  <string>向上</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normalon>:/QMainWindow/Resources/icon/picture_edit.png</normalon>
+                  </iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>16</width>
+                   <height>16</height>
+                  </size>
+                 </property>
+                 <property name="toolButtonStyle">
+                  <enum>Qt::ToolButtonTextUnderIcon</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="6">
+                <widget class="QToolButton" name="cultDownToolButton">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>32</width>
+                   <height>32</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>向下切割 (x)</string>
+                 </property>
+                 <property name="text">
+                  <string>向下</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normalon>:/QMainWindow/Resources/icon/picture_edit.png</normalon>
+                  </iconset>
+                 </property>
+                 <property name="toolButtonStyle">
+                  <enum>Qt::ToolButtonTextUnderIcon</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="2">
+                <widget class="QToolButton" name="autoCultToolButton">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>32</width>
+                   <height>32</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>自适应切割 (c)</string>
+                 </property>
+                 <property name="text">
+                  <string>适应</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normalon>:/QMainWindow/Resources/icon/picture_edit.png</normalon>
+                  </iconset>
+                 </property>
+                 <property name="toolButtonStyle">
+                  <enum>Qt::ToolButtonTextUnderIcon</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="QToolButton" name="undoToolButton1">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>32</width>
+                   <height>32</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>撤销  (ctrl+z)</string>
+                 </property>
+                 <property name="text">
+                  <string>撤销</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normalon>:/QMainWindow/Resources/icon/undo.png</normalon>
+                  </iconset>
+                 </property>
+                 <property name="toolButtonStyle">
+                  <enum>Qt::ToolButtonTextUnderIcon</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="3">
+                <widget class="QToolButton" name="redoToolButton1">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>32</width>
+                   <height>32</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>重做 (ctrl+r)</string>
+                 </property>
+                 <property name="text">
+                  <string>重做</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normalon>:/QMainWindow/Resources/icon/redo.png</normalon>
+                  </iconset>
+                 </property>
+                 <property name="toolButtonStyle">
+                  <enum>Qt::ToolButtonTextUnderIcon</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="6">
+                <widget class="QToolButton" name="homeToolButton">
+                 <property name="toolTip">
+                  <string>回家 （space）</string>
+                 </property>
+                 <property name="text">
+                  <string>回家</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normalon>:/QMainWindow/Resources/icon/building.png</normalon>
+                  </iconset>
+                 </property>
+                 <property name="toolButtonStyle">
+                  <enum>Qt::ToolButtonTextUnderIcon</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="title">
+             <string>视图</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>3</number>
+             </property>
+             <property name="bottomMargin">
+              <number>13</number>
+             </property>
+             <item>
+              <widget class="QToolButton" name="fixRotateToolButton">
+               <property name="text">
+                <string>左屏固定</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normalon>:/QMainWindow/Resources/icon/compare.png</normalon>
+                </iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="switchModelToolButton">
+               <property name="text">
+                <string>显示网格</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normalon>:/QMainWindow/Resources/icon/TwoPass.png</normalon>
+                </iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="deAngleToolButton">
+               <property name="text">
+                <string>右屏模式</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normalon>:/QMainWindow/Resources/icon/Eye_32px_1186288_easyicon.net.png</normalon>
+                </iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="viewSwitchToolButton">
+               <property name="text">
+                <string>视口切换</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normalon>:/QMainWindow/Resources/icon/SingleVisibility.png</normalon>
+                </iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="playVideoToolButton">
+               <property name="text">
+                <string>播放视频</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normalon>:/QMainWindow/Resources/icon/Flying.png</normalon>
+                </iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_6">
+            <property name="title">
+             <string>采编联动</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>3</number>
+             </property>
+             <property name="bottomMargin">
+              <number>13</number>
+             </property>
+             <item>
+              <widget class="QToolButton" name="startToolButton">
+               <property name="text">
+                <string>启动编图</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normalon>:/QMainWindow/Resources/icon/Star.png</normalon>
+                </iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="repairToolButton">
+               <property name="toolTip">
+                <string>编图启动失败时尝试修复</string>
+               </property>
+               <property name="text">
+                <string>修复</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normalon>:/QMainWindow/Resources/icon/Layers_Layer_32px_1082865_easyicon.net.png</normalon>
+                </iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="title">
+             <string>设置</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>3</number>
+             </property>
+             <property name="bottomMargin">
+              <number>13</number>
+             </property>
+             <item>
+              <widget class="QToolButton" name="backBroundToolButton">
+               <property name="text">
+                <string>背景颜色</string>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normalon>:/QMainWindow/Resources/icon/color_32px_1173762_easyicon.net.png</normalon>
+                </iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>6</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>6</number>
+               </property>
+               <item>
+                <widget class="QSlider" name="rtHorizontalSlider">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="maximum">
+                  <number>10</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_2">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>右屏透明度</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_4">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="title">
+             <string>内容窗口</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>3</number>
+             </property>
+             <property name="bottomMargin">
+              <number>13</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="obliqueTreeCheckBox">
+               <property name="text">
+                <string>倾斜树</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QCheckBox" name="doubleScreenCheckBox">
+               <property name="text">
+                <string>双屏</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QCheckBox" name="stateBarCheckBox">
+               <property name="text">
+                <string>状态栏</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QWidget" name="stateBarWidget" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>27</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #FFFFFF, stop: 0.5 #DCE6F4,
+                                stop: 0.95 #DCE6F4, stop: 1.0 #E5F0FB);
+/*background-color: rgb(220, 230, 244);*/</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_9">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="stateLabel">
+        <property name="text">
+         <string>就绪</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="QtExplorer.qrc"/>
+ </resources>
+ <connections/>
+</ui>

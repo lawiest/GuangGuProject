@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PlaceNameIconSet>
+  <Version>1.0.0</Version>
+  <Tags>武大吉奥信息技术有限公司</Tags>
+  <OnlineResource>http://www.geostar.com.cn/</OnlineResource>
+  <IconList>
+    <Icon ID ="1" Name="宾馆" Alias="" Image="image\1.png"/>
+    <Icon ID ="2" Name="餐饮" Alias="" Image="image\2.png"/>
+    <Icon ID ="3" Name="党政机关" Alias="" Image="image\3.png"/>
+    <Icon ID ="4" Name="房产家居" Alias="" Image="image\4.png"/>
+    <Icon ID ="5" Name="教育机构" Alias="" Image="image\5.png"/>
+    <Icon ID ="6" Name="金融保险" Alias="" Image="image\6.png"/>
+    <Icon ID ="7" Name="旅游" Alias="" Image="image\7.png"/>
+    <Icon ID ="8" Name="商业百货" Alias="" Image="image\8.png"/>
+    <Icon ID ="9" Name="文化机构" Alias="" Image="image\9.png"/>
+    <Icon ID ="10" Name="医疗卫生" Alias="" Image="image\10.png"/>
+    <Icon ID ="11" Name="邮政电信" Alias="" Image="image\11.png"/>
+    <Icon ID ="12" Name="djs" Alias="" Image="image\12.png"/>
+    <Icon ID ="13" Name="dzjgtt" Alias="" Image="image\13.png"/>
+    <Icon ID ="14" Name="jdbsc" Alias="" Image="image\14.png"/>
+    <Icon ID ="15" Name="jzc" Alias="" Image="image\15.png"/>
+    <Icon ID ="16" Name="nlmy" Alias="" Image="image\16.png"/>
+    <Icon ID ="17" Name="行政村" Alias="" Image="image\17.png"/>
+    <Icon ID ="18" Name="sjxz" Alias="" Image="image\18.png"/>
+    <Icon ID ="19" Name="xjs" Alias="" Image="image\19.png"/>
+    <Icon ID ="20" Name="小型城市" Alias="" Image="image\20.png"/>
+    <Icon ID ="21" Name="zrc" Alias="" Image="image\21.png"/>
+    <Icon ID ="22" Name="中型城市" Alias="" Image="image\22.png"/>
+    <Icon ID ="23" Name="zzxj" Alias="" Image="image\23.png"/>
+    <Icon ID ="24" Name="大型城市" Alias="" Image="image\24.png"/>
+    <Icon ID ="25" Name="敌台" Alias="" Image="image\25.png"/>
+    <Icon ID ="27" Name="关堡" Alias="" Image="image\27.png"/>
+  </IconList>
+</PlaceNameIconSet>

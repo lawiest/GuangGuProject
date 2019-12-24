@@ -1,0 +1,683 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\kernel\globe\Animator.h" />
+    <ClInclude Include="..\include\kernel\globe\AreaAnalysis3D.h" />
+    <ClInclude Include="..\include\kernel\globe\BillBoardElement.h" />
+    <ClInclude Include="..\include\kernel\globe\CompassElement.h" />
+    <ClInclude Include="..\include\kernel\globe\AnalysisBase.h" />
+    <ClInclude Include="..\include\kernel\globe\AnalysisBox.h" />
+    <ClInclude Include="..\include\kernel\globe\AnalysisCallBack.h" />
+    <ClInclude Include="..\include\kernel\globe\AreaAnalysis.h" />
+    <ClInclude Include="..\include\kernel\globe\DistanceAnalysis3D.h" />
+    <ClInclude Include="..\include\kernel\globe\DrawElmentAnalysis.h" />
+    <ClInclude Include="..\include\kernel\globe\EditElmentAnalysis.h" />
+    <ClInclude Include="..\include\kernel\globe\EventAdapter.h" />
+    <ClInclude Include="..\include\kernel\globe\Feature.h" />
+    <ClInclude Include="..\include\kernel\globe\FeatureClassLayer.h" />
+    <ClInclude Include="..\include\kernel\globe\FollowerCamera.h" />
+    <ClInclude Include="..\include\kernel\globe\GeoBillBoardElement.h" />
+    <ClInclude Include="..\include\kernel\globe\GroupElement.h" />
+    <ClInclude Include="..\include\kernel\globe\LinePictureElement.h" />
+    <ClInclude Include="..\include\kernel\globe\LineSymbolElement.h" />
+    <ClInclude Include="..\include\kernel\globe\LineSymbolElement3D.h" />
+    <ClInclude Include="..\include\kernel\globe\MarathonAnalysis.h" />
+    <ClInclude Include="..\include\kernel\globe\ModelElement.h" />
+    <ClInclude Include="..\include\kernel\globe\DistanceAnalysis.h" />
+    <ClInclude Include="..\include\kernel\globe\earth.h" />
+    <ClInclude Include="..\include\kernel\globe\Element.h" />
+    <ClInclude Include="..\include\kernel\globe\ElementBox.h" />
+    <ClInclude Include="..\include\kernel\globe\FlagSymbol.h" />
+    <ClInclude Include="..\include\kernel\globe\FlyBox.h" />
+    <ClInclude Include="..\include\kernel\globe\GsReference.h" />
+    <ClInclude Include="..\include\kernel\globe\HeightAnalysis.h" />
+    <ClInclude Include="..\include\kernel\globe\LonAndLatElement.h" />
+    <ClInclude Include="..\include\kernel\globe\Layer.h" />
+    <ClInclude Include="..\include\kernel\globe\LayerBox.h" />
+    <ClInclude Include="..\include\kernel\globe\ImageLayer.h" />
+    <ClInclude Include="..\include\kernel\globe\LineOfSightAnalysis.h" />
+    <ClInclude Include="..\include\kernel\globe\MultipleLineOfSightAnalysis.h" />
+    <ClInclude Include="..\include\kernel\globe\ObliqueImageLayer.h" />
+    <ClInclude Include="..\include\kernel\globe\OPInRangeAnalysis.h" />
+    <ClInclude Include="..\include\kernel\globe\OsgbProfileAnalysis.h" />
+    <ClInclude Include="..\include\kernel\globe\OsgCoreSingleton.h" />
+    <ClInclude Include="..\include\kernel\globe\OsgEngine.h" />
+    <ClInclude Include="..\include\kernel\globe\OverlayElement.h" />
+    <ClInclude Include="..\include\kernel\globe\PlaceNameLayer.h" />
+    <ClInclude Include="..\include\kernel\globe\PointSymbolElement.h" />
+    <ClInclude Include="..\include\kernel\globe\PointSymbolElement3D.h" />
+    <ClInclude Include="..\include\kernel\globe\PolygonSymbolElement.h" />
+    <ClInclude Include="..\include\kernel\globe\RadarAnalysis.h" />
+    <ClInclude Include="..\include\kernel\globe\SceneBox.h" />
+    <ClInclude Include="..\include\kernel\globe\sencegraph.h" />
+    <ClInclude Include="..\include\kernel\globe\SquareElement.h" />
+    <ClInclude Include="..\include\kernel\globe\StreamMovieElement.h" />
+    <ClInclude Include="..\include\kernel\globe\Symbol.h" />
+    <ClInclude Include="..\include\kernel\globe\SymbolBox.h" />
+    <ClInclude Include="..\include\kernel\globe\TerrainLayer.h" />
+    <ClInclude Include="..\include\kernel\globe\TerrainProfileAnalysis.h" />
+    <ClInclude Include="..\include\kernel\globe\TextElement.h" />
+    <ClInclude Include="..\include\kernel\globe\TextureMovieElement.h" />
+    <ClInclude Include="..\include\kernel\globe\VectorLayer.h" />
+    <ClInclude Include="..\include\kernel\globe\VolumeAnalysis.h" />
+    <ClInclude Include="..\include\kernel\globe\WFSLayer.h" />
+    <ClInclude Include="Analysis\Area3DTrakerElement.h" />
+    <ClInclude Include="Analysis\AreaTrakerElement.h" />
+    <ClInclude Include="Analysis\BirdsEyeElement.h" />
+    <ClInclude Include="Analysis\Distance3DTrakerElement.h" />
+    <ClInclude Include="Analysis\DistanceLoD.h" />
+    <ClInclude Include="Analysis\DistanceMeasure.h" />
+    <ClInclude Include="Analysis\EditDrawElmentTracker.h" />
+    <ClInclude Include="Analysis\EditElementTools.h" />
+    <ClInclude Include="Analysis\GeoMapTools.h" />
+    <ClInclude Include="Analysis\IntersectionVisitor.h" />
+    <ClInclude Include="Analysis\LinearLineOfSightAnalysis.h" />
+    <ClInclude Include="Analysis\LineGeometry.h" />
+    <ClInclude Include="Analysis\LineShapeMath.h" />
+    <ClInclude Include="Analysis\LineTraker3DElement.h" />
+    <ClInclude Include="Analysis\MarathonTrakerElement.h" />
+    <ClInclude Include="Analysis\MatrixTransformVisible.h" />
+    <ClInclude Include="Analysis\MultipleLinearLineOfSightAnalysis.h" />
+    <ClInclude Include="Analysis\ObserverPointsInRangeAnalysis.h" />
+    <ClInclude Include="Analysis\OsgbProfileTrakerElement.h" />
+    <ClInclude Include="Analysis\PointTrakerElement.h" />
+    <ClInclude Include="Analysis\RadarSphere.h" />
+    <ClInclude Include="Analysis\PolygonSegmentIntersector.h" />
+    <ClInclude Include="Analysis\PolygonTrakerElement3D.h" />
+    <ClInclude Include="Analysis\QueryElevationElement.h" />
+    <ClInclude Include="Analysis\RadarAnalysisHandler.h" />
+    <ClInclude Include="Analysis\RadarTraker3DElement.h" />
+    <ClInclude Include="Analysis\RotateImageHandler.h" />
+    <ClInclude Include="Analysis\SphereElement.h" />
+    <ClInclude Include="Analysis\SquareGeometry.h" />
+    <ClInclude Include="Analysis\SunlightAnalysisSector.h" />
+    <ClInclude Include="Analysis\TerrainProfileGraph.h" />
+    <ClInclude Include="Analysis\VolumeTrakerElement.h" />
+    <ClInclude Include="base\BaseTileSourceOptions.h" />
+    <ClInclude Include="base\GEOWMSCapabilities.h" />
+    <ClInclude Include="base\GEOWMSOptions.h" />
+    <ClInclude Include="base\GEOWMSTileService.h" />
+    <ClInclude Include="base\GEOWMTSOptions.h" />
+    <ClInclude Include="base\ImageTileSource.h" />
+    <ClInclude Include="base\Service.h" />
+    <ClInclude Include="base\TerrainTileSource.h" />
+    <ClInclude Include="base\TilePagedLOD.h" />
+    <ClInclude Include="Effect\FireEffect.h" />
+    <ClInclude Include="effect\FogEffect.h" />
+    <ClInclude Include="Effect\PrecipitationEffect.h" />
+    <ClInclude Include="effect\RainEffect.h" />
+    <ClInclude Include="Effect\SmokeEffect.h" />
+    <ClInclude Include="effect\SnowEffect.h" />
+    <ClInclude Include="effect\WaterEffect.h" />
+    <ClInclude Include="interface\innerimp.h" />
+    <ClInclude Include="Model\AddMeshCallback.h" />
+    <ClInclude Include="Model\Buffer.h" />
+    <ClInclude Include="Model\GrowBufferFactory.h" />
+    <ClInclude Include="Model\CProcessCallback.h" />
+    <ClInclude Include="Model\CT3DDriver.h" />
+    <ClInclude Include="Model\CT3D_3DCurve.h" />
+    <ClInclude Include="Model\CT3D_3DFeatureInfoGroup.h" />
+    <ClInclude Include="Model\CT3D_3DGeometry.h" />
+    <ClInclude Include="Model\CT3D_3DGroup.h" />
+    <ClInclude Include="Model\CT3D_3DLinearRing.h" />
+    <ClInclude Include="Model\CT3D_3DLineString.h" />
+    <ClInclude Include="Model\CT3D_3DLofting.h" />
+    <ClInclude Include="Model\CT3D_3DModelObject.h" />
+    <ClInclude Include="Model\CT3D_3DMultiPoint.h" />
+    <ClInclude Include="Model\CT3D_3DOblique.h" />
+    <ClInclude Include="Model\CT3D_3DPoint.h" />
+    <ClInclude Include="Model\CT3D_3DPolygon.h" />
+    <ClInclude Include="Model\CT3D_3DReference.h" />
+    <ClInclude Include="Model\CT3D_3DSinglePoint.h" />
+    <ClInclude Include="Model\CT3D_3DSolid.h" />
+    <ClInclude Include="Model\CT3D_3DSurface.h" />
+    <ClInclude Include="Model\CT3D_3DTriangleMesh.h" />
+    <ClInclude Include="Model\CT3D_AABBox.h" />
+    <ClInclude Include="Model\CT3D_Geometry.h" />
+    <ClInclude Include="Model\CT3D_MathEx.h" />
+    <ClInclude Include="Model\CT3D_NormaledVertex3d.h" />
+    <ClInclude Include="Model\CT3D_NormaledVertex3f.h" />
+    <ClInclude Include="Model\CT3D_Quaternion.h" />
+    <ClInclude Include="Model\CT3D_SecondVersatileVertex3d.h" />
+    <ClInclude Include="Model\CT3D_SecondVersatileVertex3dWithoutRGB.h" />
+    <ClInclude Include="Model\CT3D_SecondVersatileVertex3f.h" />
+    <ClInclude Include="Model\CT3D_SecondVersatileVertex3fWithoutRGB.h" />
+    <ClInclude Include="Model\CT3D_ShadedVertex3d.h" />
+    <ClInclude Include="Model\CT3D_ShadedVertex3f.h" />
+    <ClInclude Include="Model\CT3D_SimpleMaterial.h" />
+    <ClInclude Include="Model\CT3D_TextureDriver.h" />
+    <ClInclude Include="Model\CT3D_TexturedVertex3d.h" />
+    <ClInclude Include="Model\CT3D_TexturedVertex3f.h" />
+    <ClInclude Include="Model\CT3D_ThirdVersatileVertex3d.h" />
+    <ClInclude Include="Model\CT3D_ThirdVersatileVertex3dWithoutRGB.h" />
+    <ClInclude Include="Model\CT3D_ThirdVersatileVertex3f.h" />
+    <ClInclude Include="Model\CT3D_ThirdVersatileVertex3fWithoutRGB.h" />
+    <ClInclude Include="Model\CT3D_TileDriver.h" />
+    <ClInclude Include="Model\CT3D_VersatileVertex3d.h" />
+    <ClInclude Include="Model\CT3D_VersatileVertex3dWithoutRGB.h" />
+    <ClInclude Include="Model\CT3D_VersatileVertex3f.h" />
+    <ClInclude Include="Model\CT3D_VersatileVertex3fWithoutRGB.h" />
+    <ClInclude Include="Model\CT3D_Vertex3d.h" />
+    <ClInclude Include="Model\CT3D_Vertex3f.h" />
+    <ClInclude Include="Model\CT3D_VertexType.h" />
+    <ClInclude Include="Model\CFeature.h" />
+    <ClInclude Include="Model\FeatureClass.h" />
+    <ClInclude Include="Model\GeometrySet.h" />
+    <ClInclude Include="Model\GeometrySetFile.h" />
+    <ClInclude Include="Model\GeometryWrap.h" />
+    <ClInclude Include="Model\LodModel.h" />
+    <ClInclude Include="Model\Material.h" />
+    <ClInclude Include="Model\Model.h" />
+    <ClInclude Include="Model\ModelBaseResource.h" />
+    <ClInclude Include="Model\ModelDef.h" />
+    <ClInclude Include="Model\ModelDriver.h" />
+    <ClInclude Include="Model\ModelLayer.h" />
+    <ClInclude Include="Model\ModelManager.h" />
+    <ClInclude Include="Model\ModelOptions.h" />
+    <ClInclude Include="Model\ModelPick.h" />
+    <ClInclude Include="Model\ModelProject.h" />
+    <ClInclude Include="Model\ModelTile.h" />
+    <ClInclude Include="Model\ModelTilePagedLOD.h" />
+    <ClInclude Include="Model\PickTool.h" />
+    <ClInclude Include="Model\QuadModelTileDriver.h" />
+    <ClInclude Include="Model\ReadModelFromSQLite.h" />
+    <ClInclude Include="Model\SharedModel.h" />
+    <ClInclude Include="Model\SharedModleFile.h" />
+    <ClInclude Include="Model\SimpleReadMesh.h" />
+    <ClInclude Include="OP\OPLayer.h" />
+    <ClInclude Include="OP\TilePager.h" />
+    <ClInclude Include="pipe\GeoPipeModel.pb.h" />
+    <ClInclude Include="Pipe\PipeDriver.h" />
+    <ClInclude Include="Pipe\PipeFeature.h" />
+    <ClInclude Include="Pipe\PipeLayer.h" />
+    <ClInclude Include="Pipe\PipeLineBuilder.h" />
+    <ClInclude Include="Pipe\PipeLineModel.h" />
+    <ClInclude Include="Pipe\PipeModel.h" />
+    <ClInclude Include="Pipe\PipeOptions.h" />
+    <ClInclude Include="Pipe\PipePointModel.h" />
+    <ClInclude Include="Pipe\PipeTile.h" />
+    <ClInclude Include="Pipe\PipeTileParse.h" />
+    <ClInclude Include="Pipe\QuadPipeTileDriver.h" />
+    <ClInclude Include="PlaceName\AddPlaceNameCallback.h" />
+    <ClInclude Include="placename\GeoBillboard.h" />
+    <ClInclude Include="placename\geopoi.pb.h" />
+    <ClInclude Include="PlaceName\PlaceNameLayerPrivate.h" />
+    <ClInclude Include="PlaceName\PlacenameNodePlugin.h" />
+    <ClInclude Include="PlaceName\PlaceNameSource.h" />
+    <ClInclude Include="PlaceName\PlaceNameTile.h" />
+    <ClInclude Include="PlaceName\PlaceNameTileDriver.h" />
+    <ClInclude Include="PlaceName\PlaceNameTileOptions.h" />
+    <ClInclude Include="PlaceName\PlaceNode.h" />
+    <ClInclude Include="PlaceName\QuadPlaceNameTileDriver.h" />
+    <ClInclude Include="PreConfig.h" />
+    <ClInclude Include="shadowing_test.h" />
+    <ClInclude Include="ShapefileRY.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SunLigntAnalysis.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Tool\AdjustMesh.h" />
+    <ClInclude Include="Tool\AnimationPathHandler.h" />
+    <ClInclude Include="tool\BillBoardPicker.h" />
+    <ClInclude Include="Tool\Cache.h" />
+    <ClInclude Include="Tool\cityhash\city.h" />
+    <ClInclude Include="Tool\cityhash\citycrc.h" />
+    <ClInclude Include="Tool\cityhash\config.h" />
+    <ClInclude Include="Tool\CodeTransformHelp.h" />
+    <ClInclude Include="Tool\CommonFunction.h" />
+    <ClInclude Include="Tool\CommonStruct.h" />
+    <ClInclude Include="tool\Consultation.h" />
+    <ClInclude Include="Tool\CullingUtils.h" />
+    <ClInclude Include="Tool\CustomReaderWriterOptions.h" />
+    <ClInclude Include="tool\delegate\delegateT.h" />
+    <ClInclude Include="tool\delegate\event.h" />
+    <ClInclude Include="Tool\Download.h" />
+    <ClInclude Include="Tool\FileSystemCache.h" />
+    <ClInclude Include="tool\FreeFlyHandler.h" />
+    <ClInclude Include="Tool\GeoFCSAttributeCommon.h" />
+    <ClInclude Include="tool\GeoGlobleEvent.h" />
+    <ClInclude Include="Tool\GEOLayerControlCommon.h" />
+    <ClInclude Include="Tool\GeoTileCapabilitiesReader.h" />
+    <ClInclude Include="Tool\GGEarthManipulator.h" />
+    <ClInclude Include="Tool\GlobalSetting.h" />
+    <ClInclude Include="Tool\IDConverter.h" />
+    <ClInclude Include="tool\MediaPlayer.h" />
+    <ClInclude Include="Tool\MemCache.h" />
+    <ClInclude Include="tool\ObliqueImage.h" />
+    <ClInclude Include="tool\OverlayNode.h" />
+    <ClInclude Include="Tool\PickTool.h" />
+    <ClInclude Include="tool\PointRotationHandler.h" />
+    <ClInclude Include="Tool\SqliteHelp.h" />
+    <ClInclude Include="Tool\SQLiteOP.h" />
+    <ClInclude Include="Tool\SqliteTileCache.h" />
+    <ClInclude Include="Tool\StringTable.h" />
+    <ClInclude Include="tool\WFSFeaturePicker.h" />
+    <ClInclude Include="tool\workspaceparser.h" />
+    <ClInclude Include="Vector\FeatureCursorGEO.h" />
+    <ClInclude Include="vector\FeatureQuery.h" />
+    <ClInclude Include="Vector\FeatureSourceGEO.h" />
+    <ClInclude Include="vector\FeatureSourceGeoWFS.h" />
+    <ClInclude Include="Vector\GEOFeatureOptions.h" />
+    <ClInclude Include="Vector\GEOFeatureQueryHandler.h" />
+    <ClInclude Include="Vector\GEOFeatureUtils.h" />
+    <ClInclude Include="Vector\GeoFeature_SqliteApi.h" />
+    <ClInclude Include="Vector\GEOFeature_XMLApi.h" />
+    <ClInclude Include="Vector\GEORasterizerOptions.h" />
+    <ClInclude Include="Vector\GEORasterizerTileSource.h" />
+    <ClInclude Include="Vector\GEOVectorAttributeQuery.h" />
+    <ClInclude Include="Vector\GEOVectorQuerybyPolygonHandler.h" />
+    <ClInclude Include="Vector\GeoVectorXMLOptions.h" />
+    <ClInclude Include="Vector\GeoWFS.h" />
+    <ClInclude Include="Vector\GEOWFSFeatureOptions.h" />
+    <ClInclude Include="Vector\GEOWFSQueryHandler.h" />
+    <ClInclude Include="Vector\GEOWFSRasterizerOptions.h" />
+    <ClInclude Include="Vector\Geo_Geometry_Common.h" />
+    <ClInclude Include="Vector\LineIntersectTest.h" />
+    <ClInclude Include="vector\RoadText.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Analysis\Area3DTrakerElement.cpp" />
+    <ClCompile Include="Analysis\AreaTrakerElement.cpp" />
+    <ClCompile Include="Analysis\BirdsEyeElement.cpp" />
+    <ClCompile Include="Analysis\Distance3DTrakerElement.cpp" />
+    <ClCompile Include="Analysis\DistanceLOD.cpp" />
+    <ClCompile Include="Analysis\DistanceMeasure.cpp" />
+    <ClCompile Include="Analysis\EditDrawElmentTracker.cpp" />
+    <ClCompile Include="Analysis\EditElementTools.cpp" />
+    <ClCompile Include="Analysis\GeoMapTools.cpp" />
+    <ClCompile Include="Analysis\IntersectionVisitor.cpp" />
+    <ClCompile Include="Analysis\LinearLineOfSightAnalysis.cpp" />
+    <ClCompile Include="Analysis\LineGeometry.cpp" />
+    <ClCompile Include="Analysis\LineShapeMath.cpp" />
+    <ClCompile Include="Analysis\LineTraker3DElement.cpp" />
+    <ClCompile Include="Analysis\MarathonTrakerElement.cpp" />
+    <ClCompile Include="Analysis\MatrixTransformVisible.cpp" />
+    <ClCompile Include="Analysis\MultipleLinearLineOfSightAnalysis.cpp" />
+    <ClCompile Include="Analysis\ObserverPointsInRangeAnalysis.cpp" />
+    <ClCompile Include="Analysis\OsgbProfileTrakerElement.cpp" />
+    <ClCompile Include="Analysis\PointTrakerElement.cpp" />
+    <ClCompile Include="Analysis\PolygonSegmentIntersector.cpp" />
+    <ClCompile Include="Analysis\PolygonTrakerElement3D.cpp" />
+    <ClCompile Include="Analysis\QueryElevationElement.cpp" />
+    <ClCompile Include="Analysis\RadarAnalysisHandler.cpp" />
+    <ClCompile Include="Analysis\RadarSphere.cpp" />
+    <ClCompile Include="Analysis\RadarTraker3DElement.cpp" />
+    <ClCompile Include="Analysis\RotateImageHandler.cpp" />
+    <ClCompile Include="Analysis\SphereElement.cpp" />
+    <ClCompile Include="Analysis\SquareGeometry.cpp" />
+    <ClCompile Include="Analysis\SunlightAnalysisSector.cpp" />
+    <ClCompile Include="Analysis\TerrainProfileGraph.cpp" />
+    <ClCompile Include="Analysis\VolumeTrakerElement.cpp" />
+    <ClCompile Include="base\BaseTileSourceOptions.cpp" />
+    <ClCompile Include="base\GEOWMSCapabilities.cpp" />
+    <ClCompile Include="base\GEOWMSTileService.cpp" />
+    <ClCompile Include="base\ImageTileSource.cpp" />
+    <ClCompile Include="base\ReaderWriterGEOWMS.cpp" />
+    <ClCompile Include="base\ReaderWriterGEOWMTS.cpp" />
+    <ClCompile Include="base\Service.cpp" />
+    <ClCompile Include="base\TerrainTileSource.cpp" />
+    <ClCompile Include="base\TilePagedLOD.cpp" />
+    <ClCompile Include="effect\FogEffect.cpp" />
+    <ClCompile Include="effect\RainEffect.cpp" />
+    <ClCompile Include="effect\SnowEffect.cpp" />
+    <ClCompile Include="effect\WaterEffect.h.cpp" />
+    <ClCompile Include="interface\Animator.cpp" />
+    <ClCompile Include="interface\DrawElmentAnalysis.cpp" />
+    <ClCompile Include="interface\EditElmentAnalysis.cpp" />
+    <ClCompile Include="interface\EventAdapter.cpp" />
+    <ClCompile Include="interface\Feature.cpp" />
+    <ClCompile Include="interface\FeatureClassLayer.cpp" />
+    <ClCompile Include="interface\AreaAnalysis3D.cpp" />
+    <ClCompile Include="interface\CompassElement.cpp" />
+    <ClCompile Include="interface\AnalysisBase.cpp" />
+    <ClCompile Include="interface\AnalysisBox.cpp" />
+    <ClCompile Include="interface\AnalysisCallBack.cpp" />
+    <ClCompile Include="interface\AreaAnalysis.cpp" />
+    <ClCompile Include="interface\BillBoardElement.cpp" />
+    <ClCompile Include="interface\DistanceAnalysis3D.cpp" />
+    <ClCompile Include="interface\FollowerCamera.cpp" />
+    <ClCompile Include="interface\GeoBillBoardElement.cpp" />
+    <ClCompile Include="interface\GroupElement.cpp" />
+    <ClCompile Include="interface\LinePictureElement.cpp" />
+    <ClCompile Include="interface\LineSymbolElement.cpp" />
+    <ClCompile Include="interface\LineSymbolElement3D.cpp" />
+    <ClCompile Include="interface\MarathonAnalysis.cpp" />
+    <ClCompile Include="interface\ModelElement.cpp" />
+    <ClCompile Include="interface\DistanceAnalysis.cpp" />
+    <ClCompile Include="interface\earth.cpp" />
+    <ClCompile Include="interface\Element.cpp" />
+    <ClCompile Include="interface\ElementBox.cpp" />
+    <ClCompile Include="interface\FlagSymbol.cpp" />
+    <ClCompile Include="interface\FlyBox.cpp" />
+    <ClCompile Include="interface\HeightAnalysis.cpp" />
+    <ClCompile Include="interface\LonAndLatElement.cpp" />
+    <ClCompile Include="interface\Layer.cpp" />
+    <ClCompile Include="interface\LayerBox.cpp" />
+    <ClCompile Include="interface\ImageLayer.cpp" />
+    <ClCompile Include="interface\LineOfSightAnalysis.cpp" />
+    <ClCompile Include="interface\MultipleLineOfSightAnalysis.cpp" />
+    <ClCompile Include="interface\ObliqueImageLayer.cpp" />
+    <ClCompile Include="interface\OPInRangeAnalysis.cpp" />
+    <ClCompile Include="interface\OsgbProfileAnalysis.cpp" />
+    <ClCompile Include="interface\OsgCoreSingleton.cpp" />
+    <ClCompile Include="interface\OsgEngine.cpp" />
+    <ClCompile Include="interface\OverlayElement.cpp" />
+    <ClCompile Include="interface\PlaceNameLayer.cpp" />
+    <ClCompile Include="interface\PointSymbolElement.cpp" />
+    <ClCompile Include="interface\PointSymbolElement3D.cpp" />
+    <ClCompile Include="interface\PolygonSymbolElement.cpp" />
+    <ClCompile Include="interface\RadarAnalysis.cpp" />
+    <ClCompile Include="interface\SceneBox.cpp" />
+    <ClCompile Include="interface\sencegraph.cpp" />
+    <ClCompile Include="interface\SquareElement.cpp" />
+    <ClCompile Include="interface\StreamMovieElement.cpp" />
+    <ClCompile Include="interface\Symbol.cpp" />
+    <ClCompile Include="interface\SymbolBox.cpp" />
+    <ClCompile Include="interface\TerrainLayer.cpp" />
+    <ClCompile Include="interface\TerrainProfileAnalysis.cpp" />
+    <ClCompile Include="interface\TextElement.cpp" />
+    <ClCompile Include="interface\TextureMovieElement.cpp" />
+    <ClCompile Include="interface\VectorLayer.cpp" />
+    <ClCompile Include="interface\VolumeAnalysis.cpp" />
+    <ClCompile Include="interface\WFSLayer.cpp" />
+    <ClCompile Include="Model\Buffer.cpp" />
+    <ClCompile Include="Model\CProcessCallback.cpp" />
+    <ClCompile Include="Model\CT3D_3DCurve.cpp" />
+    <ClCompile Include="Model\CT3D_3DFeatureInfoGroup.cpp" />
+    <ClCompile Include="Model\CT3D_3DGeometry.cpp" />
+    <ClCompile Include="Model\CT3D_3DGroup.cpp" />
+    <ClCompile Include="Model\CT3D_3DLinearRing.cpp" />
+    <ClCompile Include="Model\CT3D_3DLineString.cpp" />
+    <ClCompile Include="Model\CT3D_3DLofting.cpp" />
+    <ClCompile Include="Model\CT3D_3DModelObject.cpp" />
+    <ClCompile Include="Model\CT3D_3DMultiPoint.cpp" />
+    <ClCompile Include="Model\CT3D_3DOblique.cpp" />
+    <ClCompile Include="Model\CT3D_3DPoint.cpp" />
+    <ClCompile Include="Model\CT3D_3DPolygon.cpp" />
+    <ClCompile Include="Model\CT3D_3DReference.cpp" />
+    <ClCompile Include="Model\CT3D_3DSinglePoint.cpp" />
+    <ClCompile Include="Model\CT3D_3DSolid.cpp" />
+    <ClCompile Include="Model\CT3D_3DSurface.cpp" />
+    <ClCompile Include="Model\CT3D_3DTriangleMesh.cpp" />
+    <ClCompile Include="Model\CT3D_AABox.cpp" />
+    <ClCompile Include="Model\CT3D_Geometry.cpp" />
+    <ClCompile Include="Model\CT3D_MathEx.cpp" />
+    <ClCompile Include="Model\CT3D_NormaledVertex3d.cpp" />
+    <ClCompile Include="Model\CT3D_NormaledVertex3f.cpp" />
+    <ClCompile Include="Model\CT3D_Quaternion.cpp" />
+    <ClCompile Include="Model\CT3D_SecondVersatileVertex3d.cpp" />
+    <ClCompile Include="Model\CT3D_SecondVersatileVertex3dWithoutRGB.cpp" />
+    <ClCompile Include="Model\CT3D_SecondVersatileVertex3f.cpp" />
+    <ClCompile Include="Model\CT3D_SecondVersatileVertex3fWithoutRGB.cpp" />
+    <ClCompile Include="Model\CT3D_ShadedVertex3d.cpp" />
+    <ClCompile Include="Model\CT3D_ShadedVertex3f.cpp" />
+    <ClCompile Include="Model\CT3D_SimpleMaterial.cpp" />
+    <ClCompile Include="Model\CT3D_TexturedVertex3d.cpp" />
+    <ClCompile Include="Model\CT3D_TexturedVertex3f.cpp" />
+    <ClCompile Include="Model\CT3D_ThirdVersatileVertex3d.cpp" />
+    <ClCompile Include="Model\CT3D_ThirdVersatileVertex3dWithoutRGB.cpp" />
+    <ClCompile Include="Model\CT3D_ThirdVersatileVertex3f.cpp" />
+    <ClCompile Include="Model\CT3D_ThirdVersatileVertex3fWithoutRGB.cpp" />
+    <ClCompile Include="Model\CT3D_VersatileVertex3d.cpp" />
+    <ClCompile Include="Model\CT3D_VersatileVertex3dWithoutRGB.cpp" />
+    <ClCompile Include="Model\CT3D_VersatileVertex3f.cpp" />
+    <ClCompile Include="Model\CT3D_VersatileVertex3fWithoutRGB.cpp" />
+    <ClCompile Include="Model\CT3D_Vertex3d.cpp" />
+    <ClCompile Include="Model\CT3D_Vertex3f.cpp" />
+    <ClCompile Include="Model\CFeature.cpp" />
+    <ClCompile Include="Model\FeatureClass.cpp" />
+    <ClCompile Include="Model\GeometrySet.cpp" />
+    <ClCompile Include="Model\GeometrySetFile.cpp" />
+    <ClCompile Include="model\LodModel.cpp" />
+    <ClCompile Include="Model\Material.cpp" />
+    <ClCompile Include="model\Model.cpp" />
+    <ClCompile Include="Model\ModelOptions.cpp" />
+    <ClCompile Include="model\ModelPick.cpp" />
+    <ClCompile Include="Model\ModelTile.cpp" />
+    <ClCompile Include="Model\ModelTilePagedLOD.cpp" />
+    <ClCompile Include="Model\ReadModelFromSQLite.cpp" />
+    <ClCompile Include="Model\SharedModel.cpp" />
+    <ClCompile Include="Model\SharedModleFile.cpp" />
+    <ClCompile Include="op\OPLayer.cpp" />
+    <ClCompile Include="op\TilePager.cpp" />
+    <ClCompile Include="pipe\GeoPipeModel.pb.cc" />
+    <ClCompile Include="Pipe\PipeFeature.cpp" />
+    <ClCompile Include="Pipe\PipeTileParse.cpp" />
+    <ClCompile Include="placename\GeoBillboard.cpp" />
+    <ClCompile Include="placename\geopoi.pb.cc" />
+    <ClCompile Include="placename\PlaceNameLayerPrivate.cpp" />
+    <ClCompile Include="PlaceName\PlaceNameTile.cpp" />
+    <ClCompile Include="placename\PlaceNameTileOptions.cpp" />
+    <ClCompile Include="PlaceName\PlaceNode.cpp" />
+    <ClCompile Include="placename\QuadPlaceNameTileDriver.cpp" />
+    <ClCompile Include="shadowing_test.cpp" />
+    <ClCompile Include="ShapefileRY.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="SunLigntAnalysis.cpp" />
+    <ClCompile Include="Tool\AnimationPathHandler.cpp" />
+    <ClCompile Include="tool\BillBoardPicker.cpp" />
+    <ClCompile Include="tool\Cache.cpp" />
+    <ClCompile Include="Tool\cityhash\city.cc" />
+    <ClCompile Include="Tool\CommonFunction.cpp" />
+    <ClCompile Include="tool\Consultation.cpp" />
+    <ClCompile Include="tool\FreeFlyHandler.cpp" />
+    <ClCompile Include="tool\GeoGlobleEvent.cpp" />
+    <ClCompile Include="Tool\GGEarthManipulator.cpp" />
+    <ClCompile Include="Tool\IDConverter.cpp" />
+    <ClCompile Include="tool\MediaPlayer.cpp" />
+    <ClCompile Include="tool\MemCache.cpp" />
+    <ClCompile Include="tool\ObliqueImage.cpp" />
+    <ClCompile Include="tool\OverlayNode.cpp" />
+    <ClCompile Include="tool\PointRotationHandler.cpp" />
+    <ClCompile Include="Tool\SqliteHelp.cpp" />
+    <ClCompile Include="Tool\SQLiteOP.cpp" />
+    <ClCompile Include="Tool\SqliteTileCache.cpp" />
+    <ClCompile Include="tool\WFSFeaturePicker.cpp" />
+    <ClCompile Include="tool\workspaceparser.cpp" />
+    <ClCompile Include="Vector\FeatureCursorGEO.cpp" />
+    <ClCompile Include="vector\FeatureSourceGeoWFS.cpp" />
+    <ClCompile Include="Vector\GEOFeatureQueryHandler.cpp" />
+    <ClCompile Include="Vector\GEOFeatureUtils.cpp" />
+    <ClCompile Include="vector\GEOFeature_XMLApi.cpp" />
+    <ClCompile Include="Vector\GEOVectorQuerybyPolygonHandler.cpp" />
+    <ClCompile Include="vector\GeoWFS.cpp" />
+    <ClCompile Include="Vector\GEOWFSQueryHandler.cpp" />
+    <ClCompile Include="vector\RoadText.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9E15FB94-02A9-4DB4-B88B-40BCDE4DEBC3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GeoStarosgEarthProject</RootNamespace>
+    <ProjectName>gsglobe</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <OutDir>../$(Configuration)$(PlatformShortName)\</OutDir>
+    <EmbedManifest>false</EmbedManifest>
+    <TargetExt>.dll</TargetExt>
+    <IntDir>../middle/$(ProjectName)/$(Configuration)/$(Platform)\</IntDir>
+    <TargetName>gsglobed</TargetName>
+    <ExecutablePath>F:\GsOSGEarthDev\Debugx86\osg;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <OutDir>../$(Configuration)$(PlatformShortName)\</OutDir>
+    <EmbedManifest>false</EmbedManifest>
+    <TargetExt>.dll</TargetExt>
+    <IntDir>../middle/$(ProjectName)/$(Configuration)/$(Platform)\</IntDir>
+    <TargetName>gsglobed</TargetName>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../$(Configuration)$(PlatformShortName)\</OutDir>
+    <TargetExt>.dll</TargetExt>
+    <IntDir>../middle/$(ProjectName)/$(Configuration)/$(Platform)\</IntDir>
+    <TargetName>gsglobe</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../$(Configuration)$(PlatformShortName)\</OutDir>
+    <TargetExt>.dll</TargetExt>
+    <IntDir>../middle/$(ProjectName)/$(Configuration)/$(Platform)\</IntDir>
+    <TargetName>gsglobe</TargetName>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>GEOSTAR_DLL;GEOSTAR_IMPLEMENTATION;WIN32;_DEBUG;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;../include/osg;../include/osgearth;../include/zlib;../include/utility;../include\3rdparty\protobuf;../include\3rdparty\gdal;../include/kernel/globe;../include/kernel</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);F:\GsOSGEarthDev\dependency\osg\build\lib;F:\GsOSGEarthDev\dependency\osgearth\build\lib\Debug;F:\GsOSGEarthDev\dependency\3rdparty\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>osgEarthUtild.lib;osgEarthAnnotationd.lib;osgd.lib;osgDBd.lib;osgUtild.lib;osgViewerd.lib;OpenThreadsd.lib;osgEarthFeaturesd.lib;osgEarthSymbologyd.lib;osgEarthd.lib;zlibd.lib;osgWidgetd.lib;gdal_i.lib;osgSimd.lib;osgTerraind.lib;osgFXd.lib;osgTextd.lib;osgGAd.lib;osgShadowd.lib;osgManipulatord.lib;sqlite3d.lib;osgEarthQtd.lib;osgParticled.lib;Opengl32.lib;libprotobufd.lib</AdditionalDependencies>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>GEOSTAR_DLL;GEOSTAR_IMPLEMENTATION;WIN32;_DEBUG;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;../include/osg;../include/osgearth;../include/zlib;../include/utility;../include\3rdparty\protobuf;../include\3rdparty;../include\3rdparty\gdal;../include/kernel/globe;../include/kernel;../include/FFmpeg/include</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);../include/FFmpeg/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gsutilityd.lib;libprotobufd.lib;osgParticled.lib;osgTextd.lib;osgShadowd.lib;osgGAd.lib;osgManipulatord.lib;osgEarthUtild.lib;osgEarthAnnotationd.lib;osgd.lib;osgSimd.lib;osgDBd.lib;osgUtild.lib;osgViewerd.lib;OpenThreadsd.lib;osgEarthFeaturesd.lib;osgEarthSymbologyd.lib;osgEarthd.lib;zlibd.lib;libcurl_imp.lib;gslayoutd.lib;avformat.lib;avcodec.lib;swscale.lib;swresample.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>GEOSTAR_DLL;GEOSTAR_IMPLEMENTATION;WIN32;NDEBUG;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;../include/osg;../include/osgearth;../include/zlib;../include/utility;../include\3rdparty\protobuf;../include\3rdparty\gdal;../include/kernel/globe;../include/kernel</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(OutDir)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gsutility.lib;zlibstatic.lib;libprotobuf.lib;osgParticle.lib;osgText.lib;osgShadow.lib;osgGA.lib;osgManipulator.lib;osgEarthUtil.lib;osgEarthAnnotation.lib;osg.lib;osgDB.lib;osgUtil.lib;osgViewer.lib;OpenThreads.lib;osgEarthFeatures.lib;osgEarthSymbology.lib;osgEarth.lib</AdditionalDependencies>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>GEOSTAR_DLL;GEOSTAR_IMPLEMENTATION;WIN32;NDEBUG;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;../include/osg;../include/osgearth;../include/zlib;../include/utility;../include\3rdparty;../include\3rdparty\protobuf;../include\3rdparty\gdal;../include/kernel/globe;../include/kernel;../include/FFmpeg/include</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MinimalRebuild>true</MinimalRebuild>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <AdditionalLibraryDirectories>$(OutDir);../include/FFmpeg/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gsutility.lib;zlib.lib;libprotobuf.lib;osgParticle.lib;osgText.lib;osgShadow.lib;osgGA.lib;osgManipulator.lib;osgEarthUtil.lib;osgEarthAnnotation.lib;osg.lib;osgSim.lib;osgDB.lib;osgUtil.lib;osgViewer.lib;OpenThreads.lib;osgEarthFeatures.lib;osgEarthSymbology.lib;osgEarth.lib;libcurl_imp.lib;gslayout.lib;avcodec.lib;avformat.lib;avutil.lib;avdevice.lib;avfilter.lib;swscale.lib</AdditionalDependencies>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

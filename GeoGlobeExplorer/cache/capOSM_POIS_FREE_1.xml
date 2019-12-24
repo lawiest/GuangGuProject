@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WFS_Capabilities version="1.0.0"
+    xsi:schemaLocation="http://www.opengis.net/wfs http://192.168.100.134:9010/pois1-capabilities.xsd"
+    xmlns:ogc="http://www.opengis.net/ogc"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs">
+    <Service>
+        <Name>pois1</Name>
+        <Title>GeoGlobe网络要素服务</Title>
+        <Abstract>武大吉奥信息技术有限公司GeoGlobe网络要素服务</Abstract>
+        <Keywords>
+            <Keyword>OGC WFS</Keyword>
+        </Keywords>
+        <OnlineResource>www.geostar.com.cn</OnlineResource>
+    </Service>
+    <Capability>
+        <Request>
+            <GetCapabilities>
+                <DCPType>
+                    <HTTP>
+                        <Get onlineResource="http://192.168.100.134:9010/pois1/wfs?"/>
+                    </HTTP>
+                </DCPType>
+            </GetCapabilities>
+            <DescribeFeatureType>
+                <SchemaDescriptionLanguage>
+                    <XMLSCHEMA/>
+                </SchemaDescriptionLanguage>
+                <DCPType>
+                    <HTTP>
+                        <Get onlineResource="http://192.168.100.134:9010/pois1/wfs?"/>
+                        <Post onlineResource="http://192.168.100.134:9010/pois1/wfs?"/>
+                    </HTTP>
+                </DCPType>
+            </DescribeFeatureType>
+            <GetFeature>
+                <ResultFormat>
+                    <GML2/>
+                </ResultFormat>
+                <DCPType>
+                    <HTTP>
+                        <Get onlineResource="http://192.168.100.134:9010/pois1/wfs?"/>
+                        <Post onlineResource="http://192.168.100.134:9010/pois1/wfs?"/>
+                    </HTTP>
+                </DCPType>
+            </GetFeature>
+        </Request>
+        <VendorSpecificCapabilities/>
+    </Capability>
+    <FeatureTypeList>
+        <Operations>
+            <Query/>
+        </Operations>
+        <FeatureType>
+            <Name>OSM_POIS_FREE_1</Name>
+            <Title>OSM_POIS_FREE_1</Title>
+            <Abstract>OSM_POIS_FREE_1</Abstract>
+            <Keywords>OSM_POIS_FREE_1</Keywords>
+            <SRS>EPSG:4326</SRS>
+            <LatLongBoundingBox minx="113.950645446777"
+                miny="30.3684101104736" maxx="114.541618347168" maxy="30.7066822052002"/>
+        </FeatureType>
+    </FeatureTypeList>
+    <ogc:Filter_Capabilities>
+        <ogc:Spatial_Capabilities>
+            <ogc:Spatial_Operators>
+                <ogc:BBOX/>
+                <ogc:Equals/>
+                <ogc:Disjoint/>
+                <ogc:Intersect/>
+                <ogc:Touches/>
+                <ogc:Crosses/>
+                <ogc:Within/>
+                <ogc:Contains/>
+                <ogc:Overlaps/>
+                <ogc:Beyond/>
+            </ogc:Spatial_Operators>
+        </ogc:Spatial_Capabilities>
+        <ogc:Scalar_Capabilities>
+            <ogc:Logical_Operators/>
+            <ogc:Comparison_Operators>
+                <ogc:Simple_Comparisons/>
+                <ogc:Like/>
+                <ogc:Between/>
+            </ogc:Comparison_Operators>
+        </ogc:Scalar_Capabilities>
+    </ogc:Filter_Capabilities>
+</WFS_Capabilities>

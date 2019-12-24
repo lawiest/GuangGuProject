@@ -1,0 +1,1590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Base">
+      <UniqueIdentifier>{5add39a8-3a7c-4aa1-9d2a-8a2ac7337a67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effect">
+      <UniqueIdentifier>{507eea65-116c-4e24-be27-d0f3e887821a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{a5edabcf-9559-4666-98a9-bc73fe3de878}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OP">
+      <UniqueIdentifier>{ca9ce8fc-2d25-4597-a0ef-8d05a552ee64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pipe">
+      <UniqueIdentifier>{0820c450-7ede-4a29-a22a-8ae1f35199a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlaceName">
+      <UniqueIdentifier>{0e02af42-4bfe-4823-b20b-b19fd07b8d1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tool">
+      <UniqueIdentifier>{4f0a36bd-66e6-4c00-93cf-5c216bf32812}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vector">
+      <UniqueIdentifier>{4d7bd71a-d1be-4fed-b43c-384fb38adfb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tool\cityhash">
+      <UniqueIdentifier>{668a4dee-bb62-40de-9b98-cf9d5a808bad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{7ccad6cf-284a-499b-9327-81d111ce4f4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Analysis">
+      <UniqueIdentifier>{5a454ace-23c1-48f7-b073-1b4e44dd3213}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tool\delegate">
+      <UniqueIdentifier>{80a23c0b-4912-4800-8424-9f70af64d481}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface">
+      <UniqueIdentifier>{53cdbc05-abd7-4ade-95b6-9a87b7c09415}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface\Analysis">
+      <UniqueIdentifier>{9b18cb24-c16b-45ef-bc09-96d179ff9805}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface\Layer">
+      <UniqueIdentifier>{46857d62-cf64-4368-a5ac-4db49baf297f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface\Element">
+      <UniqueIdentifier>{ff85ce98-03bb-4ae5-b194-1263e276a9a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface\Symbol">
+      <UniqueIdentifier>{11940568-1ca2-4339-bf42-54583c806b22}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Effect\FireEffect.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\PrecipitationEffect.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect\SmokeEffect.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\AddMeshCallback.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Buffer.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CProcessCallback.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_3DCurve.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_3DFeatureInfoGroup.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_3DGeometry.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_3DGroup.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_3DLinearRing.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_3DLineString.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_3DLofting.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_3DModelObject.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_3DMultiPoint.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_3DOblique.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_3DPoint.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_3DPolygon.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_3DReference.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_3DSinglePoint.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_3DSolid.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_3DSurface.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_3DTriangleMesh.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_AABBox.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_Geometry.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_MathEx.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_NormaledVertex3d.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_NormaledVertex3f.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_Quaternion.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_SecondVersatileVertex3d.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_SecondVersatileVertex3dWithoutRGB.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_SecondVersatileVertex3f.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_SecondVersatileVertex3fWithoutRGB.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_ShadedVertex3d.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_ShadedVertex3f.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_SimpleMaterial.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_TextureDriver.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_TexturedVertex3d.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_TexturedVertex3f.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_ThirdVersatileVertex3d.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_ThirdVersatileVertex3dWithoutRGB.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_ThirdVersatileVertex3f.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_ThirdVersatileVertex3fWithoutRGB.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_TileDriver.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_VersatileVertex3d.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_VersatileVertex3dWithoutRGB.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_VersatileVertex3f.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_VersatileVertex3fWithoutRGB.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_Vertex3d.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_Vertex3f.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3D_VertexType.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CT3DDriver.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\FeatureClass.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\GeometrySet.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\GeometrySetFile.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\GeometryWrap.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\LodModel.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Material.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\Model.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\ModelBaseResource.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\ModelDef.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\ModelDriver.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\ModelLayer.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\ModelManager.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\ModelOptions.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\ModelPick.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\ModelProject.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\ModelTile.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\ModelTilePagedLOD.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\PickTool.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\QuadModelTileDriver.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\ReadModelFromSQLite.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\SharedModel.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\SharedModleFile.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\SimpleReadMesh.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="OP\OPLayer.h">
+      <Filter>OP</Filter>
+    </ClInclude>
+    <ClInclude Include="OP\TilePager.h">
+      <Filter>OP</Filter>
+    </ClInclude>
+    <ClInclude Include="Pipe\PipeDriver.h">
+      <Filter>Pipe</Filter>
+    </ClInclude>
+    <ClInclude Include="Pipe\PipeFeature.h">
+      <Filter>Pipe</Filter>
+    </ClInclude>
+    <ClInclude Include="Pipe\PipeLayer.h">
+      <Filter>Pipe</Filter>
+    </ClInclude>
+    <ClInclude Include="Pipe\PipeLineBuilder.h">
+      <Filter>Pipe</Filter>
+    </ClInclude>
+    <ClInclude Include="Pipe\PipeLineModel.h">
+      <Filter>Pipe</Filter>
+    </ClInclude>
+    <ClInclude Include="Pipe\PipeModel.h">
+      <Filter>Pipe</Filter>
+    </ClInclude>
+    <ClInclude Include="Pipe\PipeOptions.h">
+      <Filter>Pipe</Filter>
+    </ClInclude>
+    <ClInclude Include="Pipe\PipePointModel.h">
+      <Filter>Pipe</Filter>
+    </ClInclude>
+    <ClInclude Include="Pipe\PipeTile.h">
+      <Filter>Pipe</Filter>
+    </ClInclude>
+    <ClInclude Include="Pipe\PipeTileParse.h">
+      <Filter>Pipe</Filter>
+    </ClInclude>
+    <ClInclude Include="Pipe\QuadPipeTileDriver.h">
+      <Filter>Pipe</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaceName\AddPlaceNameCallback.h">
+      <Filter>PlaceName</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaceName\PlacenameNodePlugin.h">
+      <Filter>PlaceName</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaceName\PlaceNameSource.h">
+      <Filter>PlaceName</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaceName\PlaceNameTile.h">
+      <Filter>PlaceName</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaceName\PlaceNameTileDriver.h">
+      <Filter>PlaceName</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaceName\PlaceNameTileOptions.h">
+      <Filter>PlaceName</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaceName\PlaceNode.h">
+      <Filter>PlaceName</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaceName\QuadPlaceNameTileDriver.h">
+      <Filter>PlaceName</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\AdjustMesh.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\AnimationPathHandler.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\Cache.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\CodeTransformHelp.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\CommonFunction.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\CommonStruct.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\CullingUtils.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\CustomReaderWriterOptions.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\Download.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\FileSystemCache.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\GeoFCSAttributeCommon.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\GEOLayerControlCommon.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\GeoTileCapabilitiesReader.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\GGEarthManipulator.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\GlobalSetting.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\IDConverter.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\MemCache.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\PickTool.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\SQLiteOP.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\StringTable.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector\FeatureCursorGEO.h">
+      <Filter>Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector\FeatureSourceGEO.h">
+      <Filter>Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector\Geo_Geometry_Common.h">
+      <Filter>Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector\GeoFeature_SqliteApi.h">
+      <Filter>Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector\GEOFeature_XMLApi.h">
+      <Filter>Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector\GEOFeatureOptions.h">
+      <Filter>Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector\GEOFeatureQueryHandler.h">
+      <Filter>Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector\GEOFeatureUtils.h">
+      <Filter>Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector\GEORasterizerOptions.h">
+      <Filter>Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector\GEORasterizerTileSource.h">
+      <Filter>Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector\GEOVectorAttributeQuery.h">
+      <Filter>Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector\GEOVectorQuerybyPolygonHandler.h">
+      <Filter>Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector\GeoVectorXMLOptions.h">
+      <Filter>Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector\GEOWFSFeatureOptions.h">
+      <Filter>Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector\GEOWFSQueryHandler.h">
+      <Filter>Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector\GEOWFSRasterizerOptions.h">
+      <Filter>Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector\LineIntersectTest.h">
+      <Filter>Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="PreConfig.h" />
+    <ClInclude Include="Tool\cityhash\city.h">
+      <Filter>Tool\cityhash</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\cityhash\citycrc.h">
+      <Filter>Tool\cityhash</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\cityhash\config.h">
+      <Filter>Tool\cityhash</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\SqliteTileCache.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool\SqliteHelp.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\GrowBufferFactory.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\workspaceparser.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="placename\GeoBillboard.h">
+      <Filter>PlaceName</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\LinearLineOfSightAnalysis.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\SphereElement.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\ObserverPointsInRangeAnalysis.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\LineTraker3DElement.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\PolygonTrakerElement3D.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\PolygonSegmentIntersector.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\IntersectionVisitor.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\Consultation.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\delegate\delegateT.h">
+      <Filter>Tool\delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\delegate\event.h">
+      <Filter>Tool\delegate</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\BirdsEyeElement.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\MediaPlayer.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="base\BaseTileSourceOptions.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\GEOWMSCapabilities.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\GEOWMSOptions.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\GEOWMSTileService.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\GEOWMTSOptions.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\ImageTileSource.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\TerrainTileSource.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\TilePagedLOD.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="effect\FogEffect.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="effect\RainEffect.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="effect\WaterEffect.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\PointTrakerElement.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="effect\SnowEffect.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="shadowing_test.h" />
+    <ClInclude Include="SunLigntAnalysis.h" />
+    <ClInclude Include="ShapefileRY.h" />
+    <ClInclude Include="vector\FeatureQuery.h">
+      <Filter>Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\SunlightAnalysisSector.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="pipe\GeoPipeModel.pb.h">
+      <Filter>Pipe</Filter>
+    </ClInclude>
+    <ClInclude Include="placename\geopoi.pb.h">
+      <Filter>PlaceName</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\sencegraph.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\earth.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\FlyBox.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\SceneBox.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\GsReference.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\innerimp.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="base\Service.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\OsgEngine.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaceName\PlaceNameLayerPrivate.h">
+      <Filter>PlaceName</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector\GeoWFS.h">
+      <Filter>Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\ObliqueImage.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\OsgCoreSingleton.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\DistanceMeasure.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\MultipleLinearLineOfSightAnalysis.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\QueryElevationElement.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\ObliqueImage.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\OsgCoreSingleton.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\PointRotationHandler.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\AnalysisBase.h">
+      <Filter>interface\Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\AnalysisBox.h">
+      <Filter>interface\Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\AnalysisCallBack.h">
+      <Filter>interface\Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\AreaAnalysis.h">
+      <Filter>interface\Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\DistanceAnalysis.h">
+      <Filter>interface\Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\HeightAnalysis.h">
+      <Filter>interface\Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\LineOfSightAnalysis.h">
+      <Filter>interface\Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\MultipleLineOfSightAnalysis.h">
+      <Filter>interface\Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\ImageLayer.h">
+      <Filter>interface\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\Layer.h">
+      <Filter>interface\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\ObliqueImageLayer.h">
+      <Filter>interface\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\TerrainLayer.h">
+      <Filter>interface\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\PlaceNameLayer.h">
+      <Filter>interface\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\OPInRangeAnalysis.h">
+      <Filter>interface\Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\Element.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\ModelElement.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\Symbol.h">
+      <Filter>interface\Symbol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\FlagSymbol.h">
+      <Filter>interface\Symbol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\BillBoardElement.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\ObliqueImageLayer.h">
+      <Filter>interface\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\Element.h" />
+    <ClInclude Include="Analysis\RotateImageHandler.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\Element.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\MultipleLineOfSightAnalysis.h">
+      <Filter>interface\Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\AreaAnalysis.h">
+      <Filter>interface\Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\DistanceAnalysis.h">
+      <Filter>interface\Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\CompassElement.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\LonAndLatElement.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\BillBoardElement.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\ModelElement.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\ElementBox.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\LayerBox.h">
+      <Filter>interface\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\SymbolBox.h">
+      <Filter>interface\Symbol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\AreaAnalysis.h">
+      <Filter>interface\Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\BillBoardElement.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\ModelElement.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\ElementBox.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\Element.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\RadarAnalysisHandler.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\RadarAnalysis.h">
+      <Filter>interface\Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\RadarTraker3DElement.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\OverlayNode.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\ElementBox.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\TextureMovieElement.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\RadarSphere.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\FreeFlyHandler.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\ElementBox.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\GeoGlobleEvent.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\ElementBox.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\GeoGlobleEvent.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\GeoBillBoardElement.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\OverlayElement.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="vector\FeatureSourceGeoWFS.h">
+      <Filter>Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\WFSLayer.h">
+      <Filter>interface\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\Area3DTrakerElement.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\Distance3DTrakerElement.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\AreaAnalysis3D.h">
+      <Filter>interface\Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\DistanceAnalysis3D.h">
+      <Filter>interface\Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\PointSymbolElement.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\LineSymbolElement.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\PolygonSymbolElement.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\PointSymbolElement3D.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\LineSymbolElement3D.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\VectorLayer.h">
+      <Filter>interface\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\WFSFeaturePicker.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\TerrainProfileAnalysis.h">
+      <Filter>interface\Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\TerrainProfileGraph.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\Feature.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\CFeature.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\FeatureClassLayer.h">
+      <Filter>interface\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\StreamMovieElement.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="tool\BillBoardPicker.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="vector\RoadText.h">
+      <Filter>Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\MarathonTrakerElement.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\MarathonAnalysis.h">
+      <Filter>interface\Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\GeoMapTools.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\DrawElmentAnalysis.h">
+      <Filter>interface\Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\LineGeometry.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\LineShapeMath.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\LinePictureElement.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\TextElement.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\EditDrawElmentTracker.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\EditElementTools.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\EditElmentAnalysis.h">
+      <Filter>interface\Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\FollowerCamera.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\MatrixTransformVisible.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\GroupElement.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\Animator.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\DistanceLoD.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\SquareGeometry.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\SquareElement.h">
+      <Filter>interface\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\EventAdapter.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\VolumeTrakerElement.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\VolumeAnalysis.h">
+      <Filter>interface\Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\OsgbProfileTrakerElement.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\kernel\globe\OsgbProfileAnalysis.h">
+      <Filter>interface\Analysis</Filter>
+    </ClInclude>
+    <ClInclude Include="Analysis\AreaTrakerElement.h">
+      <Filter>Analysis</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Model\Buffer.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CProcessCallback.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_3DCurve.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_3DFeatureInfoGroup.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_3DGeometry.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_3DGroup.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_3DLinearRing.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_3DLineString.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_3DLofting.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_3DModelObject.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_3DMultiPoint.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_3DOblique.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_3DPoint.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_3DPolygon.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_3DReference.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_3DSinglePoint.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_3DSolid.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_3DSurface.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_3DTriangleMesh.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_AABox.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_Geometry.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_MathEx.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_NormaledVertex3d.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_NormaledVertex3f.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_Quaternion.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_SecondVersatileVertex3d.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_SecondVersatileVertex3dWithoutRGB.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_SecondVersatileVertex3f.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_SecondVersatileVertex3fWithoutRGB.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_ShadedVertex3d.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_ShadedVertex3f.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_SimpleMaterial.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_TexturedVertex3d.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_TexturedVertex3f.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_ThirdVersatileVertex3d.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_ThirdVersatileVertex3dWithoutRGB.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_ThirdVersatileVertex3f.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_ThirdVersatileVertex3fWithoutRGB.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_VersatileVertex3d.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_VersatileVertex3dWithoutRGB.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_VersatileVertex3f.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_VersatileVertex3fWithoutRGB.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_Vertex3d.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CT3D_Vertex3f.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\FeatureClass.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\GeometrySet.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\GeometrySetFile.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\Material.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\ModelTile.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\ModelTilePagedLOD.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\ReadModelFromSQLite.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\SharedModel.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\SharedModleFile.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Pipe\PipeFeature.cpp">
+      <Filter>Pipe</Filter>
+    </ClCompile>
+    <ClCompile Include="Pipe\PipeTileParse.cpp">
+      <Filter>Pipe</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaceName\PlaceNameTile.cpp">
+      <Filter>PlaceName</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaceName\PlaceNode.cpp">
+      <Filter>PlaceName</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\AnimationPathHandler.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\CommonFunction.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\GGEarthManipulator.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\IDConverter.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\SQLiteOP.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector\FeatureCursorGEO.cpp">
+      <Filter>Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector\GEOFeatureQueryHandler.cpp">
+      <Filter>Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector\GEOFeatureUtils.cpp">
+      <Filter>Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector\GEOVectorQuerybyPolygonHandler.cpp">
+      <Filter>Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector\GEOWFSQueryHandler.cpp">
+      <Filter>Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Model\ModelOptions.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\cityhash\city.cc">
+      <Filter>Tool\cityhash</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\SqliteHelp.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool\SqliteTileCache.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="placename\PlaceNameTileOptions.cpp">
+      <Filter>PlaceName</Filter>
+    </ClCompile>
+    <ClCompile Include="placename\QuadPlaceNameTileDriver.cpp">
+      <Filter>PlaceName</Filter>
+    </ClCompile>
+    <ClCompile Include="op\OPLayer.cpp">
+      <Filter>OP</Filter>
+    </ClCompile>
+    <ClCompile Include="op\TilePager.cpp">
+      <Filter>OP</Filter>
+    </ClCompile>
+    <ClCompile Include="model\ModelPick.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\workspaceparser.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="placename\GeoBillboard.cpp">
+      <Filter>PlaceName</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\LinearLineOfSightAnalysis.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\SphereElement.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\ObserverPointsInRangeAnalysis.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\LineTraker3DElement.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\PolygonSegmentIntersector.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\PolygonTrakerElement3D.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\IntersectionVisitor.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\Consultation.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\BirdsEyeElement.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\MediaPlayer.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="base\GEOWMSCapabilities.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\GEOWMSTileService.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\ImageTileSource.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\ReaderWriterGEOWMS.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\ReaderWriterGEOWMTS.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\TerrainTileSource.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\TilePagedLOD.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="effect\FogEffect.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="effect\RainEffect.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="effect\WaterEffect.h.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\PointTrakerElement.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="effect\SnowEffect.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="shadowing_test.cpp" />
+    <ClCompile Include="SunLigntAnalysis.cpp" />
+    <ClCompile Include="ShapefileRY.cpp" />
+    <ClCompile Include="Analysis\SunlightAnalysisSector.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="pipe\GeoPipeModel.pb.cc">
+      <Filter>Pipe</Filter>
+    </ClCompile>
+    <ClCompile Include="placename\geopoi.pb.cc">
+      <Filter>PlaceName</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\Cache.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="model\LodModel.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\MemCache.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="model\Model.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\sencegraph.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\earth.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\FlyBox.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\SceneBox.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="base\BaseTileSourceOptions.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Service.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\OsgEngine.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="placename\PlaceNameLayerPrivate.cpp">
+      <Filter>PlaceName</Filter>
+    </ClCompile>
+    <ClCompile Include="vector\GeoWFS.cpp">
+      <Filter>Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\ObliqueImage.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\OsgCoreSingleton.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\DistanceMeasure.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\MultipleLinearLineOfSightAnalysis.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\PointRotationHandler.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\QueryElevationElement.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\ObliqueImage.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\OsgCoreSingleton.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\AnalysisBase.cpp">
+      <Filter>interface\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\AnalysisBox.cpp">
+      <Filter>interface\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\AnalysisCallBack.cpp">
+      <Filter>interface\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\AreaAnalysis.cpp">
+      <Filter>interface\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\DistanceAnalysis.cpp">
+      <Filter>interface\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\HeightAnalysis.cpp">
+      <Filter>interface\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\LineOfSightAnalysis.cpp">
+      <Filter>interface\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\MultipleLineOfSightAnalysis.cpp">
+      <Filter>interface\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\ImageLayer.cpp">
+      <Filter>interface\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\Layer.cpp">
+      <Filter>interface\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\ObliqueImageLayer.cpp">
+      <Filter>interface\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\WFSLayer.cpp">
+      <Filter>interface\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\TerrainLayer.cpp">
+      <Filter>interface\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\PlaceNameLayer.cpp">
+      <Filter>interface\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\OPInRangeAnalysis.cpp">
+      <Filter>interface\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\Element.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\ModelElement.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\Symbol.cpp">
+      <Filter>interface\Symbol</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\FlagSymbol.cpp">
+      <Filter>interface\Symbol</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\BillBoardElement.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\ObliqueImageLayer.cpp">
+      <Filter>interface\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\Element.cpp" />
+    <ClCompile Include="Analysis\RotateImageHandler.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\Element.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\MultipleLineOfSightAnalysis.cpp">
+      <Filter>interface\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\AreaAnalysis.cpp">
+      <Filter>interface\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\DistanceAnalysis.cpp">
+      <Filter>interface\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\CompassElement.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\LonAndLatElement.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\BillBoardElement.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\ModelElement.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\ElementBox.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\LayerBox.cpp">
+      <Filter>interface\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\SymbolBox.cpp">
+      <Filter>interface\Symbol</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\AreaAnalysis.cpp">
+      <Filter>interface\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\BillBoardElement.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\DistanceAnalysis.cpp">
+      <Filter>interface\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\ModelElement.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\ElementBox.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\Element.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\RadarAnalysisHandler.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\RadarAnalysis.cpp">
+      <Filter>interface\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\RadarTraker3DElement.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\OverlayNode.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\ElementBox.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\TextureMovieElement.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\RadarSphere.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\FreeFlyHandler.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\ElementBox.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\GeoGlobleEvent.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\ElementBox.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\GeoGlobleEvent.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\GeoBillBoardElement.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\OverlayElement.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="vector\FeatureSourceGeoWFS.cpp">
+      <Filter>Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\Area3DTrakerElement.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\Distance3DTrakerElement.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\AreaAnalysis3D.cpp">
+      <Filter>interface\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\DistanceAnalysis3D.cpp">
+      <Filter>interface\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\PointSymbolElement.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\LineSymbolElement.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\PolygonSymbolElement.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\PointSymbolElement3D.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\LineSymbolElement3D.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\VectorLayer.cpp">
+      <Filter>interface\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="vector\GEOFeature_XMLApi.cpp">
+      <Filter>Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\WFSFeaturePicker.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\TerrainProfileAnalysis.cpp">
+      <Filter>interface\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\TerrainProfileGraph.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\Feature.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\CFeature.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\FeatureClassLayer.cpp">
+      <Filter>interface\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\StreamMovieElement.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="tool\BillBoardPicker.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="vector\RoadText.cpp">
+      <Filter>Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\MarathonTrakerElement.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\MarathonAnalysis.cpp">
+      <Filter>interface\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\GeoMapTools.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\DrawElmentAnalysis.cpp">
+      <Filter>interface\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\LineGeometry.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\LineShapeMath.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\LinePictureElement.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\TextElement.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\EditElementTools.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\EditDrawElmentTracker.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\EditElmentAnalysis.cpp">
+      <Filter>interface\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\FollowerCamera.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\MatrixTransformVisible.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\GroupElement.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\Animator.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\DistanceLOD.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\SquareGeometry.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\SquareElement.cpp">
+      <Filter>interface\Element</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\EventAdapter.cpp">
+      <Filter>interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\VolumeTrakerElement.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\VolumeAnalysis.cpp">
+      <Filter>interface\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\OsgbProfileTrakerElement.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\OsgbProfileAnalysis.cpp">
+      <Filter>interface\Analysis</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis\AreaTrakerElement.cpp">
+      <Filter>Analysis</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

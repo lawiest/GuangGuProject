@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WFS_Capabilities version="1.0.0"
+    xsi:schemaLocation="http://www.opengis.net/wfs http://172.15.103.160:7001/maptile-capabilities.xsd"
+    xmlns:ogc="http://www.opengis.net/ogc"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs">
+    <Service>
+        <Name>maptile</Name>
+        <Title>标题</Title>
+        <Abstract>摘要</Abstract>
+        <Keywords>
+            <Keyword>关键字</Keyword>
+        </Keywords>
+        <OnlineResource>http://www.geostar.com.cn</OnlineResource>
+    </Service>
+    <Capability>
+        <Request>
+            <GetCapabilities>
+                <DCPType>
+                    <HTTP>
+                        <Get onlineResource="http://172.15.103.160:7001/maptile/wfs?"/>
+                    </HTTP>
+                </DCPType>
+            </GetCapabilities>
+            <DescribeFeatureType>
+                <SchemaDescriptionLanguage>
+                    <XMLSCHEMA/>
+                </SchemaDescriptionLanguage>
+                <DCPType>
+                    <HTTP>
+                        <Get onlineResource="http://172.15.103.160:7001/maptile/wfs?"/>
+                        <Post onlineResource="http://172.15.103.160:7001/maptile/wfs?"/>
+                    </HTTP>
+                </DCPType>
+            </DescribeFeatureType>
+            <GetFeature>
+                <ResultFormat>
+                    <GML2/>
+                </ResultFormat>
+                <DCPType>
+                    <HTTP>
+                        <Get onlineResource="http://172.15.103.160:7001/maptile/wfs?"/>
+                        <Post onlineResource="http://172.15.103.160:7001/maptile/wfs?"/>
+                    </HTTP>
+                </DCPType>
+            </GetFeature>
+        </Request>
+        <VendorSpecificCapabilities/>
+    </Capability>
+    <FeatureTypeList>
+        <Operations>
+            <Query/>
+        </Operations>
+        <FeatureType>
+            <Name>RES1_4M_P</Name>
+            <Title>RES1_4M_P</Title>
+            <Abstract>RES1_4M_P</Abstract>
+            <Keywords>RES1_4M_P</Keywords>
+            <SRS>EPSG:4490</SRS>
+            <LatLongBoundingBox minx="87.606116999999"
+                miny="20.031793999999" maxx="126.64334000000099" maxy="45.741493000001"/>
+        </FeatureType>
+        <FeatureType>
+            <Name>BOU1_4M_L</Name>
+            <Title>BOU1_4M_L</Title>
+            <Abstract>BOU1_4M_L</Abstract>
+            <Keywords>BOU1_4M_L</Keywords>
+            <SRS>EPSG:4326</SRS>
+            <LatLongBoundingBox minx="73.44695999999901"
+                miny="3.408477299999" maxx="135.08583000000098" maxy="53.557926000001004"/>
+        </FeatureType>
+        <FeatureType>
+            <Name>BOU2_4M_S</Name>
+            <Title>BOU2_4M_S</Title>
+            <Abstract>BOU2_4M_S</Abstract>
+            <Keywords>BOU2_4M_S</Keywords>
+            <SRS>EPSG:4490</SRS>
+            <LatLongBoundingBox minx="73.44695999999901"
+                miny="6.318641199999" maxx="135.08583000000098" maxy="53.557926000001004"/>
+        </FeatureType>
+    </FeatureTypeList>
+    <ogc:Filter_Capabilities>
+        <ogc:Spatial_Capabilities>
+            <ogc:Spatial_Operators>
+                <ogc:BBOX/>
+                <ogc:Equals/>
+                <ogc:Disjoint/>
+                <ogc:Intersect/>
+                <ogc:Touches/>
+                <ogc:Crosses/>
+                <ogc:Within/>
+                <ogc:Contains/>
+                <ogc:Overlaps/>
+                <ogc:Beyond/>
+            </ogc:Spatial_Operators>
+        </ogc:Spatial_Capabilities>
+        <ogc:Scalar_Capabilities>
+            <ogc:Logical_Operators/>
+            <ogc:Comparison_Operators>
+                <ogc:Simple_Comparisons/>
+                <ogc:Like/>
+                <ogc:Between/>
+            </ogc:Comparison_Operators>
+        </ogc:Scalar_Capabilities>
+    </ogc:Filter_Capabilities>
+</WFS_Capabilities>

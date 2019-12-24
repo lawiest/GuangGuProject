@@ -1,0 +1,32 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# 创建的文件:26.03.2018 09:48:14
+
+newmtl su37_flanker_fighter_rus
+	Ns 16.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.6877 0.6877 0.6877
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka maps\su37-flanker-fighter_rus.rgb
+	map_Kd maps\su37-flanker-fighter_rus.rgb
+	map_d maps\su37-flanker-fighter_rus.rgb
+
+newmtl pilot_russia
+	Ns 16.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.6877 0.6877 0.6877
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka maps\pilot-russia.rgb
+	map_Kd maps\pilot-russia.rgb
+	map_d maps\pilot-russia.rgb

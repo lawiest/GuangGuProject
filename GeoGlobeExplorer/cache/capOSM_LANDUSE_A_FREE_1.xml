@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WFS_Capabilities version="1.0.0"
+    xsi:schemaLocation="http://www.opengis.net/wfs http://192.168.51.107:9010/XL_WFS_F/wfs-capabilities.xsd"
+    xmlns:ogc="http://www.opengis.net/ogc"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wfs">
+    <Service>
+        <Name>XL_WFS_F</Name>
+        <Title>GeoGlobe带事务的网络要素服务</Title>
+        <Abstract>武大吉奥信息技术有限公司GeoGlobe带事务的网络要素服务</Abstract>
+        <Keywords>GeoGlobe WFS-T</Keywords>
+        <OnlineResource>www.geostar.com.cn</OnlineResource>
+    </Service>
+    <Capability>
+        <Request>
+            <GetCapabilities>
+                <DCPType>
+                    <HTTP>
+                        <Get onlineResource="http://192.168.51.107:9010/XL_WFS_F/wfs"/>
+                    </HTTP>
+                </DCPType>
+            </GetCapabilities>
+            <DescribeFeatureType>
+                <SchemaDescriptionLanguage>
+                    <XMLSCHEMA/>
+                </SchemaDescriptionLanguage>
+                <DCPType>
+                    <HTTP>
+                        <Get onlineResource="http://192.168.51.107:9010/XL_WFS_F/wfs"/>
+                        <Post onlineResource="http://192.168.51.107:9010/XL_WFS_F/wfs"/>
+                    </HTTP>
+                </DCPType>
+            </DescribeFeatureType>
+            <GetFeature>
+                <ResultFormat>
+                    <GML2/>
+                </ResultFormat>
+                <DCPType>
+                    <HTTP>
+                        <Get onlineResource="http://192.168.51.107:9010/XL_WFS_F/wfs"/>
+                        <Post onlineResource="http://192.168.51.107:9010/XL_WFS_F/wfs"/>
+                    </HTTP>
+                </DCPType>
+            </GetFeature>
+            <Transaction>
+                <DCPType>
+                    <HTTP>
+                        <Get onlineResource="http://192.168.51.107:9010/XL_WFS_F/wfs"/>
+                        <Post onlineResource="http://192.168.51.107:9010/XL_WFS_F/wfs"/>
+                    </HTTP>
+                </DCPType>
+            </Transaction>
+            <LockFeature>
+                <DCPType>
+                    <HTTP>
+                        <Get onlineResource="http://192.168.51.107:9010/XL_WFS_F/wfs"/>
+                        <Post onlineResource="http://192.168.51.107:9010/XL_WFS_F/wfs"/>
+                    </HTTP>
+                </DCPType>
+            </LockFeature>
+        </Request>
+        <VendorSpecificCapabilities/>
+    </Capability>
+    <FeatureTypeList>
+        <Operations>
+            <Query/>
+            <Insert/>
+            <Update/>
+            <Delete/>
+            <Lock/>
+        </Operations>
+        <FeatureType>
+            <Name>OSM_LANDUSE_A_FREE_1</Name>
+            <Title>GIS.OSM_LANDUSE_A_FREE_1</Title>
+            <Abstract>GIS.OSM_LANDUSE_A_FREE_1</Abstract>
+            <Keywords>OSM_LANDUSE_A_FREE_1</Keywords>
+            <SRS>EPSG:4490</SRS>
+            <LatLongBoundingBox minx="113.76513671875"
+                miny="30.0224304199219" maxx="114.962615966797" maxy="31.1698532104492"/>
+        </FeatureType>
+    </FeatureTypeList>
+    <ogc:Filter_Capabilities>
+        <ogc:Spatial_Capabilities>
+            <ogc:Spatial_Operators>
+                <ogc:BBOX/>
+                <ogc:Equals/>
+                <ogc:Disjoint/>
+                <ogc:Intersect/>
+                <ogc:Touches/>
+                <ogc:Crosses/>
+                <ogc:Within/>
+                <ogc:Contains/>
+                <ogc:Overlaps/>
+                <ogc:Beyond/>
+            </ogc:Spatial_Operators>
+        </ogc:Spatial_Capabilities>
+        <ogc:Scalar_Capabilities>
+            <ogc:Logical_Operators/>
+            <ogc:Comparison_Operators>
+                <ogc:Simple_Comparisons/>
+                <ogc:Like/>
+                <ogc:Between/>
+            </ogc:Comparison_Operators>
+        </ogc:Scalar_Capabilities>
+    </ogc:Filter_Capabilities>
+</WFS_Capabilities>
