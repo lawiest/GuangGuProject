@@ -608,7 +608,6 @@ void MainWindow::AddServerSlot()
 		GLOBE_NAME::Layer* ptrLayerTerrain = new GLOBE_NAME::TerrainLayer(strUrl, GLOBE_NAME::eGeoGlobeTile);
 		if (ptrLayerTerrain)
 		{
-
 			m_ptrGeoSpace3D->LayerBox()->AddLayer(ptrLayerImage);
 			m_ptrGeoSpace3D->LayerBox()->AddLayer(ptrLayerImageText);
 			m_ptrGeoSpace3D->LayerBox()->AddLayer(ptrLayerTerrain);
